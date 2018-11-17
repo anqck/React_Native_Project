@@ -1,12 +1,26 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { Toolbar } from 'react-native-material-ui';
+
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <Toolbar
+        leftElement="menu"
+        centerElement="Searchable"
+        searchable={{
+          autoFocus: true,
+          placeholder: 'Search',
+        }}
+        rightElement={{
+            menu: {
+                icon: "more-vert",
+                labels: ["item 1", "item 2"]
+            }
+        }}
+        onRightElementPress={ (label) => { console.log(label) }}
+      />
     );
   }
 }
