@@ -6,9 +6,10 @@
 # Screen
 - Dashboard ( Information about Finacial Statement, Expense and Income, Recent Transaction, Expense Analysis, ..)
 - Account Manager 
- | + All account ( Active, Deactive | Wallet, ATM, ect.) information
- | + Total amount of all account
- | + Add, Delete
+  - All account ( Active, Deactive | Wallet, ATM, ect.) information
+  - Total amount of all account
+  - Add (
+- Theo dõi vay nợ
 
 # Library
  - react-native-material-ui : Highly customizable material design components for React Native
