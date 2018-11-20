@@ -8,7 +8,12 @@
 - Account Manager 
   - All account ( Active, Deactive | Wallet, ATM, ect.) information
   - Total amount of all account
-  - Add (
+  - Add ( Initial balance, Account Name, Type of account (Cash, Bank account, CC, etc.), Currency, Description)
+- Transaction (Income, Expense, Transfer, Adjusment)
+  - Category
+  - Description
+  - Datetime
+  - Account
 - Theo dõi vay nợ
 
 # Library
