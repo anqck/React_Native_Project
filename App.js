@@ -1,35 +1,33 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {NativeModules, StatusBar, Text, View } from 'react-native';
+import { COLOR } from 'react-native-material-ui';
+import { MenuProvider } from 'react-native-popup-menu';
 
-import { Toolbar } from 'react-native-material-ui';
+import {App1, BaseNavigator} from "./app/navigation";
+import styles from './app/styles/AppStyles';
+
+const UIManager = NativeModules.UIManager;
+
+const uiTheme = {
+    palette: {
+        primaryColor: COLOR.green500,
+        accentColor: COLOR.pink500,
+    },
+};
 
 export default class App extends React.Component {
   render() {
     return (
-      <Toolbar
-        leftElement="menu"
-        centerElement="Searchable"
-        searchable={{
-          autoFocus: true,
-          placeholder: 'Search',
-        }}
-        rightElement={{
-            menu: {
-                icon: "more-vert",
-                labels: ["item 1", "item 2"]
-            }
-        }}
-        onRightElementPress={ (label) => { console.log(label) }}
-      />
+      <MenuProvider>
+        <View style={styles.rootStyle}>
+          <StatusBar
+            barStyle="dark-content"
+            backgroundColor={COLOR.white}
+          />
+          <App1/>
+        </View>
+      </MenuProvider>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
