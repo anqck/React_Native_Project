@@ -5,7 +5,16 @@ import Routes from './routes/RootRoutes';
 const config = {
   animationEnabled: false,
   tabBarPosition: 'bottom',
-  showLabel: false,
+
+  tabBarOptions: { 
+  
+      showIcon: true ,
+      showLabel: false,
+      activeTintColor: '#F8F8F8',
+      inactiveTintColor: '#586589',
+     
+},
+
   activeTintColor: '#F8F8F8',
   inactiveTintColor: '#586589',
   style: {
@@ -14,4 +23,4 @@ const config = {
    tabStyle: {}
 };
 
-export default createBottomTabNavigator(Routes, config);
+export default TabNavigator(Routes,  config);

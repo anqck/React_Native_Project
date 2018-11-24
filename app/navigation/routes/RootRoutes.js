@@ -1,4 +1,13 @@
+import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {TouchableWithoutFeedback, View} from "react-native";
+import {
+    MaterialIcons,
+    MaterialCommunityIcons,
+    SimpleLineIcons,
+    Entypo,
+    Ionicons,
+  } from '@expo/vector-icons';
 
 import Bookmarks from '../../screens/Bookmarks';
 
@@ -66,7 +75,7 @@ const Routes = {
                     />
                 )
             })
-        }
+        },
     };
 
 export default Routes;
