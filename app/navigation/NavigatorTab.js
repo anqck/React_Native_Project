@@ -23,4 +23,4 @@ const config = {
    tabStyle: {}
 };
 
-export default TabNavigator(Routes,  config);
+export default createBottomTabNavigator(Routes,  config);
