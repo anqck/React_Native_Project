@@ -20,4 +20,6 @@ const appReducer = {
 };
 
 
- export default persistCombineReducers( appReducer);
+ export default persistCombineReducers( config,appReducer);
+
+ 
