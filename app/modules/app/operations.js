@@ -7,23 +7,25 @@ import {
 } from './actions';
 
 const loadFonts = () => async (dispatch) => {
-  try {
-    await Font.loadAsync(fonts);
-    dispatch(fontsLoaded(true));
-  } catch (error) {
-    dispatch(fontsLoaded(false));
-    console.log(error);
-  }
+  // try {
+  //   await Font.loadAsync(fonts);
+  //   dispatch(fontsLoaded(true));
+  // } catch (error) {
+  //   dispatch(fontsLoaded(false));
+  //   console.log(error);
+  // }
+  fontsLoaded(true);
 };
 
 const loadImages = () => async (dispatch) => {
-  try {
-    await loadImgs();
-    dispatch(imagesLoaded(true));
-  } catch (err) {
-    dispatch(imagesLoaded(false));
-    console.log(err);
-  }
+  // try {
+  //   await loadImgs();
+  //   dispatch(imagesLoaded(true));
+  // } catch (err) {
+  //   dispatch(imagesLoaded(false));
+  //   console.log(err);
+  // }
+  imagesLoaded(true);
 };
 
 const loadAssets = () => (dispatch) => {

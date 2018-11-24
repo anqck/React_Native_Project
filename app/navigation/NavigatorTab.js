@@ -1,4 +1,4 @@
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator,createBottomTabNavigator  } from 'react-navigation';
 
 import Routes from './routes/RootRoutes';
 
@@ -14,4 +14,4 @@ const config = {
    tabStyle: {}
 };
 
-export default TabNavigator(Routes, config);
+export default createBottomTabNavigator(Routes, config);
