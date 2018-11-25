@@ -10,6 +10,7 @@ import {
   } from '@expo/vector-icons';
 
 import Bookmarks from '../../screens/Bookmarks';
+import AccountsOverview from '../../screens/AccountsOverview';
 
 
 const Routes = {
@@ -26,8 +27,8 @@ const Routes = {
                 )
             })
         },
-        Likes: {
-            screen: Bookmarks,
+        Accounts: {
+            screen: AccountsOverview,
             navigationOptions: () => ({
                 tabBarLabel: 'Home',
                 tabBarIcon: ({tintColor}) => (
@@ -47,11 +48,17 @@ const Routes = {
                         borderRadius: 70 / 2,
                         backgroundColor: '#48A2F8',
                     }}>
-                        <Icon name="plus" size={24} color={tintColor}/>
+                       <Icon name="plus" size = {24} color={tintColor}/>
                     </View>
                 )
             })
         },
+        // Adding: {
+        //     screen: () => null,
+        //     navigationOptions: () => ({
+        //         tabBarIcon: <AddButton/>
+        //     })
+        // },
         Private: {
             screen: Bookmarks,
             navigationOptions: () => ({
