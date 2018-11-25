@@ -10,16 +10,12 @@ const config = {
   
       showIcon: true ,
       showLabel: false,
-      activeTintColor: '#F8F8F8',
+      activeTintColor: '#171F33',
       inactiveTintColor: '#586589',
      
 },
 
-  activeTintColor: '#F8F8F8',
-  inactiveTintColor: '#586589',
-  style: {
-        backgroundColor: '#171F33'
-  },
+
    tabStyle: {}
 };
 
