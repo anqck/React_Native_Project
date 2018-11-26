@@ -2,6 +2,7 @@ import AsyncStorage from 'redux-persist/es/storage';
 import { persistCombineReducers } from 'redux-persist';
 import app from './app';
 import navigator from './navigator';
+import settings from './settings';
 
 const config = {
   key: 'root',
@@ -18,6 +19,7 @@ const config = {
 const appReducer = {
   app,
   navigator,
+  settings,
 };
 
 
