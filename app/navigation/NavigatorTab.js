@@ -5,7 +5,7 @@ import Routes from './routes/RootRoutes';
 const config = {
   animationEnabled: false,
   tabBarPosition: 'bottom',
-
+  
   tabBarOptions: { 
   
       showIcon: true ,
