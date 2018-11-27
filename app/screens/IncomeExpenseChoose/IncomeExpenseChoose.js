@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {SafeAreaView, Text} from 'react-native';
 
-class Bookmarks extends Component {
+class IncomeExpenseChoose extends Component {
     render() {
         return (
             <SafeAreaView style={{
@@ -15,4 +15,4 @@ class Bookmarks extends Component {
     }
 }
 
-export default Bookmarks;
+export default IncomeExpenseChoose;

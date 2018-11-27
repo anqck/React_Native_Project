@@ -12,6 +12,7 @@ import {
 import Bookmarks from '../../screens/Bookmarks';
 import AccountsOverview from '../../screens/AccountsOverview';
 import Calculator from '../../screens/Calculator';
+import CalculatorNav from '../NavigatorTopTab';
 
 const Routes = {
         Bookmarks: {
@@ -37,7 +38,8 @@ const Routes = {
             })
         },
         Adding: {
-            screen: Bookmarks,
+            screen: CalculatorNav,
+            
             navigationOptions: () => ({
                 tabBarIcon: ({tintColor}) => (
                     <View style={{
