@@ -5,10 +5,14 @@ import Dummmy from '../../screens/Bookmarks'
 
 
 const ExpenseRoutes = {
-    ExpenseCalculator: { screen: Calculator },
+    ExpenseCalculator: { screen: Calculator ,navigationOptions: () => ({
+
+        header: null,
+    })},
     AddExpense: { screen: Dummmy ,navigationOptions: () => ({
         tabBarLabel: 'Income',
         tabBarVisible: false,
+      
     })},
   };
   
@@ -20,7 +24,7 @@ ExpenseNav.navigationOptions = ({ navigation }) => {
 
     let tabBarVisible = true;
     let swipeEnabled = true;
-    
+
     let routeName = navigation.state.routes[navigation.state.index].routeName
 
     if ( routeName == 'AddExpense' ) {
