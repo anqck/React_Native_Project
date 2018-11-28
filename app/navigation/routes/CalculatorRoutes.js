@@ -10,6 +10,18 @@ const ExpenseRoutes = {
         header: null,
     })},
     AddExpense: { screen: Dummmy ,navigationOptions: () => ({
+        tabBarLabel: 'Expense',
+        tabBarVisible: false,
+      
+    })},
+  };
+  
+  const IncomeRoutes = {
+    IncomeCalculator: { screen:props => <Calculator {...props} type="income" />,navigationOptions: () => ({
+
+        header: null,
+    })},
+    AddIncome: { screen: Dummmy ,navigationOptions: () => ({
         tabBarLabel: 'Income',
         tabBarVisible: false,
       
@@ -17,8 +29,8 @@ const ExpenseRoutes = {
   };
   
   
-  
 const ExpenseNav = createStackNavigator(ExpenseRoutes);
+const IncomeNav = createStackNavigator(IncomeRoutes);
 
 ExpenseNav.navigationOptions = ({ navigation }) => {
 
@@ -38,9 +50,27 @@ ExpenseNav.navigationOptions = ({ navigation }) => {
     }
 }
 
+IncomeNav.navigationOptions = ({ navigation }) => {
+
+    let tabBarVisible = true;
+    let swipeEnabled = true;
+
+    let routeName = navigation.state.routes[navigation.state.index].routeName
+
+    if ( routeName == 'AddIncome' ) {
+        tabBarVisible = false,
+        swipeEnabled= false
+    }
+
+    return {
+        tabBarVisible,
+        swipeEnabled,
+    }
+}
+
 const CalculatorRoutes = {
     IncomeCalculator: {
-        screen: props => <Calculator {...props} type="income" />,
+        screen: IncomeNav,
         navigationOptions: () => ({
             tabBarLabel: 'Income',
             

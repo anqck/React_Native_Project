@@ -56,6 +56,8 @@ const enhance = compose(
     },
     onSubmitResult: ({ expr, navigation, id, isIncome }) => () => {
       withPaschal(expr);
+      isIncome?navigation.navigate(
+        'AddIncome', { value: isIncome ? +expr : -expr, id, isIncome }):
       navigation.navigate(
         'AddExpense', { value: isIncome ? +expr : -expr, id, isIncome });
     },
