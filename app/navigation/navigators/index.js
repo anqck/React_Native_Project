@@ -1,8 +1,8 @@
-// import AccountsNavigator from './AccountsNavigator';
+import AccountsNavigator from './AccountsNavigator';
 
 
-// export {
+export {
 
-//   AccountsNavigator,
+  AccountsNavigator,
 
-// };
+};

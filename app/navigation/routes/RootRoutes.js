@@ -10,7 +10,7 @@ import {
   } from '@expo/vector-icons';
 
 import Bookmarks from '../../screens/Bookmarks';
-import AccountsOverview from '../../screens/AccountsOverview';
+import AccountsNavigator from '../navigators';
 import Calculator from '../../screens/Calculator';
 import CalculatorNav from '../NavigatorTopTab';
 
@@ -29,7 +29,7 @@ const Routes = {
             })
         },
         Accounts: {
-            screen: AccountsOverview,
+            screen: AccountsNavigator,
             navigationOptions: () => ({
                 tabBarLabel: 'Home',
                 tabBarIcon: ({tintColor}) => (
