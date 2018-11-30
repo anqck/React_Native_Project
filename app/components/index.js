@@ -13,7 +13,11 @@ import Logo from './Logo'
 import Icon from './Icon'
 import DrawerIcon from './DrawerIcon'
 import Subtitle from './Subtitle'
+import KeyboardAvoidingView from './KeyboardAvoidingView'
+import ScreenWrapper from './ScreenWrapper'
 export {
+  ScreenWrapper,
+  KeyboardAvoidingView,
   Subtitle,
   Logo,
   Icon,
