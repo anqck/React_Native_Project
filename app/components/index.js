@@ -9,7 +9,15 @@ import Value from './Value';
 import VerticalSeparator from './VerticalSeparator';
 import Input from './Input';
 import PropsProxyHOC from './PropsProxyHOC'
+import Logo from './Logo'
+import Icon from './Icon'
+import DrawerIcon from './DrawerIcon'
+import Subtitle from './Subtitle'
 export {
+  Subtitle,
+  Logo,
+  Icon,
+  DrawerIcon,
   PropsProxyHOC,
   AccountItem,
   Button,
