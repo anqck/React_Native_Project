@@ -10,7 +10,7 @@ import {
   } from '@expo/vector-icons';
 
 import Bookmarks from '../../screens/Bookmarks';
-import AccountsNavigator from '../navigators';
+import AccountsNavigator from '../navigators/AccountsNavigator';
 import Calculator from '../../screens/Calculator';
 import CalculatorNav from '../NavigatorTopTab';
 
@@ -28,7 +28,7 @@ const Routes = {
                 )
             })
         },
-        Accounts: {
+        AccountsM: {
             screen: AccountsNavigator,
             navigationOptions: () => ({
                 tabBarLabel: 'Home',
