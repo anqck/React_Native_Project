@@ -25,7 +25,7 @@ const Accounts = ({
                         leftElement={<Avatar
                           small
                           rounded
-                          source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"}}                  
+                          overlayContainerStyle={{backgroundColor: item.color}}         
                           activeOpacity={0.7}
                         />}
                         centerElement={{

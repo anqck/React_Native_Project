@@ -21,9 +21,10 @@ export const getAccounts = createSelector(
   (ids, entities, state) => R.map(accId => ({
     ...entities[accId],
     balance:
-     entities[accId].initialBalance +
-     transfersSum(state.transfers, accId) +
-     transactionsSum(state.transactions, state.categories, accId),
+     entities[accId].initialBalance 
+    //  +
+    //  transfersSum(state.transfers, accId) +
+    //  transactionsSum(state.transactions, state.categories, accId),
   }), ids),
 );
 

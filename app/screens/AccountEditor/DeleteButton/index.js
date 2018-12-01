@@ -12,7 +12,7 @@ const enhance = compose(
 
     return {
       account,
-      title: 'Delete',
+      title: 'Xóa',
       backOnSuccess: true,
       isVisible: !!account,
       onPress: () => deleteAccount(account.id),

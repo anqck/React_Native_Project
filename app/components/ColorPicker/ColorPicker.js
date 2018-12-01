@@ -27,7 +27,7 @@ const ColorPicker = ({
     <View style={s.container}>
       <View style={s.secondContainer}>
         <View style={s.containerTitle}>
-          <Text style={s.title}>Pick Color</Text>
+          <Text style={s.title}>Chọn Màu</Text>
         </View>
         <View style={s.containerContent}>
           <View style={s.secondContainerContent}>
@@ -42,8 +42,8 @@ const ColorPicker = ({
           </View>
         </View>
         <View style={s.containerButton}>
-          <Button title="CANCEL" onPress={onBackdropPress} />
-          <Button title="OK" onPress={() => onSelectColor(selectedColor)} />
+          <Button title="HỦY" onPress={onBackdropPress} />
+          <Button title="CHỌN" onPress={() => onSelectColor(selectedColor)} />
         </View>
       </View>
     </View>
