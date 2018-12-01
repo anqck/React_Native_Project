@@ -15,7 +15,11 @@ import DrawerIcon from './DrawerIcon'
 import Subtitle from './Subtitle'
 import KeyboardAvoidingView from './KeyboardAvoidingView'
 import ScreenWrapper from './ScreenWrapper'
+import ColorPicker from './ColorPicker'
+import NavigationButton from './NavigationButton'
 export {
+  NavigationButton,
+  ColorPicker,
   ScreenWrapper,
   KeyboardAvoidingView,
   Subtitle,
