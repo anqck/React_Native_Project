@@ -19,7 +19,15 @@ import ColorPicker from './ColorPicker'
 import NavigationButton from './NavigationButton'
 import SegmentedControl from './SegmentedControl'
 import TabContainer from './TabContainer'
+import CategoriesList from './CategoriesList'
+import CategoryIcon from './CategoryIcon'
+import Separator from './Separator'
+import RoundIcon from './RoundIcon'
 export {
+  RoundIcon,
+  Separator,
+  CategoriesList,
+  CategoryIcon,
   SegmentedControl,
   TabContainer,
   NavigationButton,
