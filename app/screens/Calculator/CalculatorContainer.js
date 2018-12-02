@@ -15,9 +15,14 @@ const hasDotInLastNumber = R.pipe(
   R.equals('.'),
 );
 
+
+const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
+
 const mapStateToProps = (state, props) => ({
   value: R.pathOr('', ['transactions', 'byId', props.id, 'value'], state),
 });
+
+
 
 const enhance = compose(
   withPickParams,

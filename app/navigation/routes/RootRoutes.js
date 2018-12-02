@@ -14,7 +14,7 @@ import AccountsNavigator from '../navigators/AccountsNavigator';
 import Calculator from '../../screens/Calculator';
 import CalculatorNav from '../NavigatorTopTab';
 import Categories from '../../screens/Categories';
-
+import CategoriesNavigator from '../navigators/CategoriesNavigator';
 
 const Routes = {
         Bookmarks: {
@@ -66,6 +66,7 @@ const Routes = {
         Private: {
             screen: Bookmarks,
             navigationOptions: () => ({
+                
                 tabBarIcon: ({tintColor}) => (
                     <MaterialIcons
                         name="insert-chart"
@@ -76,8 +77,9 @@ const Routes = {
             })
         },
         Profile: {
-            screen: Categories,
+            screen: CategoriesNavigator,
             navigationOptions: () => ({
+                
                 tabBarIcon: ({tintColor}) => (
                     <Icon
                         name="cog"

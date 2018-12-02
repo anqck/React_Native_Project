@@ -8,6 +8,7 @@ import CategoriesScreenView from './CategoriesScreenView';
 import { transactionsOperations } from '../../modules/transactions';
 import { getExpenseCategory, getIncomeCategory } from '../../modules/categories/selectors';
 
+const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 
 const mapStateToProps = state => ({
   expenseCategories: getExpenseCategory(state.categories),
