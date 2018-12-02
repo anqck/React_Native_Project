@@ -17,7 +17,11 @@ import KeyboardAvoidingView from './KeyboardAvoidingView'
 import ScreenWrapper from './ScreenWrapper'
 import ColorPicker from './ColorPicker'
 import NavigationButton from './NavigationButton'
+import SegmentedControl from './SegmentedControl'
+import TabContainer from './TabContainer'
 export {
+  SegmentedControl,
+  TabContainer,
   NavigationButton,
   ColorPicker,
   ScreenWrapper,
