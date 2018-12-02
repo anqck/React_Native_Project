@@ -23,7 +23,9 @@ import CategoriesList from './CategoriesList'
 import CategoryIcon from './CategoryIcon'
 import Separator from './Separator'
 import RoundIcon from './RoundIcon'
+import Select from './Select'
 export {
+  Select,
   RoundIcon,
   Separator,
   CategoriesList,

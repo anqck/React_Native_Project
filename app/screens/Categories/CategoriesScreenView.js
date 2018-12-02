@@ -21,14 +21,14 @@ const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 
 const goEditCategory = navigation => (category) => {
   navigation.navigate(screens.CategoryEditor, {
-    title: 'Edit category',
+    title: 'Sửa hạng mục thu/chi',
     category,
   });
 };
 
 const goAddCategory = navigation => () => {
   navigation.navigate(screens.CategoryEditor, {
-    title: 'New category',
+    title: 'Thêm hạng mục thu/chi',
   });
 };
 
@@ -45,7 +45,7 @@ const Categories = ({
 
   return (
     <ScreenWrapper style={s.container}>
-      <Subtitle leftText="Categories" withLittlePadding />
+      <Subtitle leftText="Hạng mục thu/chi" withLittlePadding />
       <SegmentedControl
         values={tabs}
         selectedIndex={selectedTabIndex}
@@ -64,7 +64,7 @@ const Categories = ({
       </TabContainer>
       <TabContainer
         selectedTabIndex={selectedTabIndex}
-        tabIndex={1} // eslint-disable-line
+        tabIndex={1} 
         topOffset={90}
       >
         <CategoriesList

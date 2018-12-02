@@ -9,9 +9,9 @@ const CategoriesRoutes = {
     screen: Categories,
     // navigationOptions: headerOptions(),
   },
-//   [screens.CategoryEditor]: {
-//     screen: CategoryEditor,
-//   },
+  [screens.CategoryEditor]: {
+    screen: CategoryEditor,
+  },
 };
 
 export default CategoriesRoutes;
