@@ -13,7 +13,6 @@ import Bookmarks from '../../screens/Bookmarks';
 import AccountsNavigator from '../navigators/AccountsNavigator';
 import Calculator from '../../screens/Calculator';
 import CalculatorNav from '../NavigatorTopTab';
-import Categories from '../../screens/Categories';
 import CategoriesNavigator from '../navigators/CategoriesNavigator';
 
 const Routes = {

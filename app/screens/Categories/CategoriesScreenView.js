@@ -73,15 +73,7 @@ const Categories = ({
         />
       </TabContainer>
 
-      <ActionButton
-        buttonColor={colors.green}
-        size={55}
-        spacing={10}
-        offsetX={15}
-        offsetY={15}
-        buttonText="+"
-        onPress={goAddCategory(navigation)}
-      />
+ 
 
     </ScreenWrapper>
   );
