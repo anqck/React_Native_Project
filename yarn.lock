@@ -1711,7 +1711,7 @@ babel-polyfill@6.23.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-polyfill@^6.23.0:
+babel-polyfill@^6.23.0, babel-polyfill@^6.8.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
   integrity sha1-N5k3q8Z9eJWXCtxiHyhM2WbPIVM=
@@ -6219,6 +6219,13 @@ react-native-modal@^7.0.2:
   dependencies:
     prop-types "^15.6.1"
     react-native-animatable "^1.2.4"
+
+react-native-platform-stylesheet@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-platform-stylesheet/-/react-native-platform-stylesheet-0.0.6.tgz#743eedbb7275acd9502e1d8f47c7aeab912d6bc5"
+  integrity sha1-dD7tu3J1rNlQLh2PR8euq5Eta8U=
+  dependencies:
+    babel-polyfill "^6.8.0"
 
 react-native-popup-menu@^0.14.1:
   version "0.14.1"

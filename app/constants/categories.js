@@ -1,8 +1,8 @@
 import R from 'ramda';
 
 export const categoriesTypes = {
-  expense: 'Expense',
-  income: 'Income',
+  expense: 'Chi',
+  income: 'Thu',
 };
 
 export const isExpense = type => type === categoriesTypes.expense;
