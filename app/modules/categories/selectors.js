@@ -14,7 +14,7 @@ export const getIncomeCategory = createSelector(
   (ids, entities) => {
     const newArr = [];
     ids.forEach((id) => {
-      if (entities[id].type === 'Income') {
+      if (entities[id].type === 'Thu') {
         newArr.push(entities[id]);
       }
     });
@@ -32,7 +32,7 @@ export const getExpenseCategory = createSelector(
   (ids, entities) => {
     const newArr = [];
     ids.forEach((id) => {
-      if (entities[id].type === 'Expense') {
+      if (entities[id].type === 'Chi') {
         newArr.push(entities[id]);
       }
     });

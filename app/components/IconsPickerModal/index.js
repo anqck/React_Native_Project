@@ -15,7 +15,7 @@ const IconsPickerModal = ({
       onBackdropPress={hideModal}
       style={s.modalStyle}
     >
-      <Text style={s.title}>Select the icon</Text>
+      <Text style={s.title}>Chọn biểu tượng</Text>
       <IconsPickerList
         style={s.listStyle}
         icons={icons}
