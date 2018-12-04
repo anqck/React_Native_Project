@@ -31,7 +31,9 @@ import TransactionItem from './TransactionItem'
 import EmptyList from './EmptyList'
 import DateFilter from './DateFilter'
 import Calendar from './Calendar'
+import DatePicker from './DatePicker'
 export {
+  DatePicker,
   Calendar,
   DateFilter,
   EmptyList,

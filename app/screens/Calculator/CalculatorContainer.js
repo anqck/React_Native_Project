@@ -4,8 +4,7 @@ import R from 'ramda';
 import CalculatorScreenView from './CalculatorScreenView';
 import screens from '../../constants/screens';
 import { withPickParams, withPaschal } from '../../utils/enhancers';
-import Bookmarks from '../Bookmarks'
-
+import {DeviceEventEmitter} from 'react-native'
 
 const defaultExpr = '0';
 
@@ -22,7 +21,10 @@ const mapStateToProps = (state, props) => ({
   value: R.pathOr('', ['transactions', 'byId', props.id, 'value'], state),
 });
 
-
+    const Clear= () =>
+    {
+  updateExpr(defaultExpr);
+};
 
 const enhance = compose(
   withPickParams,
@@ -62,19 +64,37 @@ const enhance = compose(
     onSubmitResult: ({ expr, navigation, id, isIncome }) => () => {
       withPaschal(expr);
       isIncome?navigation.navigate(
-        'AddIncome', { value: isIncome ? +expr : -expr, id, isIncome }):
+        'AddIncome', { value: isIncome ? +expr : -expr, id, isIncome, refresh: Clear }):
       navigation.navigate(
         'AddExpense', { value: isIncome ? +expr : -expr, id, isIncome });
     },
   }),
 
   lifecycle({
-    
+    componentWillMount() {
+      const { setIsIncome, value, updateExpr, type,navigation } = this.props;
+
+      DeviceEventEmitter.addListener('Refresh', (e)=>{updateExpr(0); console.log('Refresh');})
+  },
     componentDidMount() {
-      const { setIsIncome, value, updateExpr, type } = this.props;
+      // const { setIsIncome, value, updateExpr, type } = this.props;
+
+      const { setIsIncome, value, updateExpr, type,navigation } = this.props;
+
+      navigation.addListener ('willFocus', () =>{
+        console.log('Focus');
+      });
+
+      // this._subscribe = this.props.navigation.addListener('didFocus', () => {
+        
+      //  })
+      // console.log(value);
+      // this.props.navigation.addListener ('willFocus', () =>{
+      //   updateExpr(0);
+      // });
 
       setIsIncome(type === 'income');
-      if (value) updateExpr(Math.abs(value));
+       if (value) updateExpr(Math.abs(value));
     },
   }),
 );

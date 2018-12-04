@@ -16,6 +16,9 @@ import { transactionsOperations } from '../../modules/transactions';
 import { getExpenseCategory, getIncomeCategory } from '../../modules/categories/selectors';
 import { colors } from '../../styles';
 import types from '../../modules/navigator/types';
+import { NavigationActions } from 'react-navigation';
+import Toast from 'react-native-simple-toast';
+import {DeviceEventEmitter} from 'react-native'
 
 const requiredProps = ['value', 'account', 'category', 'date'];
 
@@ -29,6 +32,10 @@ const mapStateToProps = (state, { navigation }) => ({
   incomeCategories: getIncomeCategory(state.categories),
   transaction: R.pathOr(null, ['transactions', 'byId', getParam('id')(navigation)], state),
 });
+
+//ScreenB...
+
+
 
 const enhance = compose(
 
@@ -54,7 +61,7 @@ const enhance = compose(
     transaction, createTransaction, updateTransaction, category, account,
   }) => ({
     submit: transaction ? updateTransaction : createTransaction,
-    categoryName: R.pathOr('Category', ['name'], category),
+    categoryName: R.pathOr('Danh mục', ['name'], category),
     categoryIcon: {
       name: R.pathOr('', ['icon'], category),
       color: R.pathOr(colors.greyDarker, ['color'], account),
@@ -66,6 +73,8 @@ const enhance = compose(
     onSubmit: ({
       submit, transaction, account, category, navigation, ...props
     }) => () => {
+
+      
       let editedProps = {
         ...R.pick(['value', 'date', 'note'], props),
         account: account && account.id,
@@ -75,7 +84,15 @@ const enhance = compose(
       if (transaction) editedProps = { id: transaction.id, ...editedProps };
 
       submit(editedProps);
-      navigation.dispatch({ type: types.GO_TO_INITIAL_SCREEN });
+      // navigation.dispatch(NavigationActions.back());
+
+      //navigation.navigate('IncomeCalculator', { type: 'expense' });
+  
+      
+      DeviceEventEmitter.emit('Refresh',  {})
+      Toast.show('Lưu thành công.');
+       navigation.goBack();
+
     },
     onToggleModal: ({ setVisibleModal, isVisibleModal }) => () => {
       setVisibleModal(!isVisibleModal);

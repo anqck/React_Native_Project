@@ -5,6 +5,7 @@ import { getParam } from '../../utils/navHelpers';
 import { dimensions } from '../../styles';
 // import dateFormat from '../../constants/dateFormat';
 
+
 import {
   Input,
   Button,
@@ -44,13 +45,7 @@ const AccountEditor = ({
   <View style={s.root}>
     <ScreenWrapper style={s.withoutPaddingBot}>
       <ScrollView>
-      <Input
-          isValid
-          placeholder="0"
-          value={value}
-          containerStyle={s.noteContainer}
-          iconRight={icon}
-        />
+     
         <Value value={value} style={s.valueText} type={isIncome ? 'income' : 'expense'} />
         <Select
           isAccount
@@ -58,7 +53,7 @@ const AccountEditor = ({
           options={accounts}
           containerStyle={s.selectorContainer}
           style={s.selector}
-          defaultValue="Account"
+          defaultValue="Tài khoản"
           selectorsWidth={dimensions.containerWidth}
           onSelect={onChangeAccount}
           textStyle={s.selectTextStyle}
@@ -74,7 +69,7 @@ const AccountEditor = ({
         />
         <DatePicker
           isSelected
-          placeholder="Initial date"
+          placeholder="Ngày"
           onSelectDate={val => setDate(val)}
           defaultValue={date}
           // format={dateFormat.newAccountDateFormat}
@@ -83,7 +78,7 @@ const AccountEditor = ({
         />
         <Input
           isValid
-          placeholder="Note"
+          placeholder="Ghi chú"
           value={note}
           onChangeText={onUpdateNote}
           containerStyle={s.noteContainer}
@@ -95,7 +90,7 @@ const AccountEditor = ({
       {isReadyForSubmit &&
       <Button
         secondaryOpacity
-        title="Save"
+        title="Lưu"
         onPress={onSubmit}
       />
       }
@@ -107,6 +102,7 @@ const AccountEditor = ({
       onSelect={onChangeCategory}
       onToggleModal={onToggleModal}
     />
+  
   </View>
 );
 
