@@ -14,10 +14,11 @@ import AccountsNavigator from '../navigators/AccountsNavigator';
 import Calculator from '../../screens/Calculator';
 import CalculatorNav from '../NavigatorTopTab';
 import CategoriesNavigator from '../navigators/CategoriesNavigator';
+import TransactionsNavigator from '../navigators/TransactionsNavigator';
 
 const Routes = {
         Bookmarks: {
-            screen: Calculator,
+            screen: TransactionsNavigator,
             navigationOptions: () => ({
                 tabBarLabel: '',
                 tabBarIcon: ({tintColor}) => (
