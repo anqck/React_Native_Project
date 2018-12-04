@@ -68,7 +68,7 @@ const Calculator = (props) => {
 Calculator.navigationOptions = ({ navigation }) => ({
   headerTitle:
   <HeaderTitle
-    title={getParam('type')(navigation) === 'income' ? 'Add Income' : 'Add Expense'}
+    title={getParam('type')(navigation) === 'income' ? 'Thêm thu' : 'Thêm chi'}
   />,
 
 });

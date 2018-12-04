@@ -34,7 +34,9 @@ const enhance = compose(
   withState('expr', 'updateExpr', ({ value }) => value || defaultExpr),
   withHandlers({
     onBackspace: ({ expr, updateExpr }) => () => {
-      updateExpr(expr.length > 1 ? R.init(expr) : defaultExpr);
+      let newExpr = expr.toString();
+      console.log(newExpr,R.init(newExpr.toString()) );
+      updateExpr(newExpr.length > 1 ? R.init(newExpr) : defaultExpr);
     },
     onClear: ({ updateExpr }) => () => {
       updateExpr(defaultExpr);
@@ -63,10 +65,21 @@ const enhance = compose(
     },
     onSubmitResult: ({ expr, navigation, id, isIncome }) => () => {
       withPaschal(expr);
+      console.log(id);
+      if(typeof id !== "undefined") {
+        console.log('undefined id');
+        navigation.navigate(
+          screens.TransactionEditor, { value: isIncome ? +expr : -expr, id, isIncome });
+    }
+    else
+    {
+
       isIncome?navigation.navigate(
         'AddIncome', { value: isIncome ? +expr : -expr, id, isIncome, refresh: Clear }):
       navigation.navigate(
         'AddExpense', { value: isIncome ? +expr : -expr, id, isIncome });
+    }
+
     },
   }),
 
@@ -81,9 +94,7 @@ const enhance = compose(
 
       const { setIsIncome, value, updateExpr, type,navigation } = this.props;
 
-      navigation.addListener ('willFocus', () =>{
-        console.log('Focus');
-      });
+     
 
       // this._subscribe = this.props.navigation.addListener('didFocus', () => {
         

@@ -52,8 +52,8 @@ const AccountItem = ({
         />
         :
         <View>
-          {balance > 9999999 ?
-            <Text style={s.toLargeText}>Oops, too large money to display it 😁</Text>
+          {balance > 9999999999 ?
+            <Text style={s.toLargeText}>Bạn có quá nhiều tiền để hiển thị 😁</Text>
             :
             <Value
               style={[s.value, { fontSize: calcValueSize(Math.round(balance)) }]}
