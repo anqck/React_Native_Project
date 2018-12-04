@@ -26,8 +26,6 @@ const Transactions = ({
   totalBalance,
   concatenatedData,
   onDelete,
-  onAddToFavourite,
-  onDeleteFromFavourites,
   onGoToDetail,
   dateForFiltering,
   setDateForFiltering,
@@ -45,8 +43,7 @@ const Transactions = ({
         id={item.id}
         entity={item}
         onDelete={() => onDelete(param)}
-        onAddToFavourite={() => onAddToFavourite(param)}
-        onDeleteFromFavourites={() => onDeleteFromFavourites(param)}
+
         isFavourite={item.isFavourite}
         onPress={() => onGoToDetail(param)}
         onAllowScroll={onAllowScroll}
@@ -62,13 +59,13 @@ const Transactions = ({
 
   return (
     <View style={s.root}>
-      {/* <Animated.View
+      <Animated.View
         style={[
           s.header,
           concatenatedData.length > 5 && { transform: [{ translateY: headerTranslate }] },
         ]}
       >
-        <Subtitle
+        {/* <Subtitle
           style={s.subtitle}
           withoutPadding
           leftText="Accounts"
@@ -76,7 +73,7 @@ const Transactions = ({
         />
         <View style={{ paddingLeft: dimensions.halfIndent, paddingRight: dimensions.halfIndent }}>
           <AccountsSwiper navigation={navigation} />
-        </View>
+        </View> */}
         <Separator withOpacity />
         <DateFilter
           dateForFiltering={dateForFiltering}
@@ -85,11 +82,11 @@ const Transactions = ({
         <Subtitle
           style={s.subtitle}
           withLittlePadding
-          leftText="Transaction"
+          leftText="Ghi chép"
           date={dateForFiltering}
         />
         <Separator withShadow />
-      </Animated.View> */}
+      </Animated.View>
       <AnimatedFlatList
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { y: scrollY } } }],
