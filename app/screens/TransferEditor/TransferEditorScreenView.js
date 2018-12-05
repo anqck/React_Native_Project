@@ -53,7 +53,7 @@ const AccountEditor = ({
 }) => {
   const optionsFrom = accountsArr.filter(item => item.id !== to.id);
   const optionsTo = accountsArr.filter(item => item.id !== from.id);
-  console.log(account);
+  // console.log(account);
   return (
     <View style={s.root}>
       <ScreenWrapper style={s.withoutPaddingBottom}>
@@ -89,7 +89,8 @@ const AccountEditor = ({
               placeholder="Ngày khởi tạo"
               onSelectDate={(none, d) => onChangeDate(d)}
               containerStyle={s.marginVertical}
-              format={dateFormat.newAccountDateFormat}
+              // format={dateFormat.newAccountDateFormat}
+              // mode="datetime"
               colorIsSelected={colors.grey}
               date={date}
             />

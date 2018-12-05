@@ -14,7 +14,7 @@ export const AccountSelect = withProps({
   isAccount: true,
   containerStyle: s.marginVertical,
   style: s.selector,
-  defaultValue: 'Account',
+  defaultValue: 'Tài khoản',
   selectorsWidth: dimensions.containerWidth - dimensions.indent,
   textStyle: s.selectTextStyle,
   optionHeight: dimensions.verticalIndent * 2.8,
