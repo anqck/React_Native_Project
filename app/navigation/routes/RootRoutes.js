@@ -13,10 +13,12 @@ import Bookmarks from '../../screens/Bookmarks';
 import AccountsNavigator from '../navigators/AccountsNavigator';
 import Calculator from '../../screens/Calculator';
 import CalculatorNav from '../NavigatorTopTab';
+import CategoriesNavigator from '../navigators/CategoriesNavigator';
+import TransactionsNavigator from '../navigators/TransactionsNavigator';
 
 const Routes = {
         Bookmarks: {
-            screen: Calculator,
+            screen: TransactionsNavigator,
             navigationOptions: () => ({
                 tabBarLabel: '',
                 tabBarIcon: ({tintColor}) => (
@@ -64,6 +66,7 @@ const Routes = {
         Private: {
             screen: Bookmarks,
             navigationOptions: () => ({
+                
                 tabBarIcon: ({tintColor}) => (
                     <MaterialIcons
                         name="insert-chart"
@@ -74,8 +77,9 @@ const Routes = {
             })
         },
         Profile: {
-            screen: Bookmarks,
+            screen: CategoriesNavigator,
             navigationOptions: () => ({
+                
                 tabBarIcon: ({tintColor}) => (
                     <Icon
                         name="cog"

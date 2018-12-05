@@ -22,9 +22,9 @@ export const getAccounts = createSelector(
     ...entities[accId],
     balance:
      entities[accId].initialBalance 
-    //  +
-    //  transfersSum(state.transfers, accId) +
-    //  transactionsSum(state.transactions, state.categories, accId),
+     +
+     transfersSum(state.transfers, accId) +
+     transactionsSum(state.transactions, state.categories, accId),
   }), ids),
 );
 
