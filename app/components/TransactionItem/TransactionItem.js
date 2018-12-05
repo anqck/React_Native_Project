@@ -67,6 +67,7 @@ const TransactionItem = ({
         </Value>
       </TouchableItem>
       :
+      
       <Swipeout
         {...swipeoutBtns}
         sensitivity={20}
@@ -81,9 +82,9 @@ const TransactionItem = ({
             }
           </View>
           <View style={s.mainContentContainer}>
-            <Text style={s.title}>{isTransfer ? 'Transfer' : categoryName}</Text>
+            <Text style={s.title}>{isTransfer ? 'Chuyển khoản' : categoryName}</Text>
             <Text style={s.accountName}>
-              {isTransfer ? `From ${fromName} ››› to ${toName}` : accountName}
+              {isTransfer ? `Từ ${fromName} ››› đến ${toName}` : accountName}
             </Text>
             <Text style={s.date}>{dateWithTime(entity.date)}</Text>
           </View>

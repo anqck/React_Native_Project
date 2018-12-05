@@ -42,13 +42,27 @@ const enhance = compose(
     new Animated.Value(Platform.OS === 'ios' ? -dimensions.headerMaxHeight : 0)),
 
   withHandlers({
-
+    onAddToFavourite: props => ({ isTransaction, id }) => {
+      isTransaction
+      ? props.addTransactionToFavourites(id)
+      : props.addTransferToFavourites(id);
+    },
+    onDeleteFromFavourites: props => ({ isTransaction, id }) => {
+      isTransaction
+        ? props.onDeleteFromFavourites(id)
+        : props.onDeleteTransferFromFavourites(id);
+    },
     onDelete: props => ({ isTransaction, id }) => {
       isTransaction
         ? props.deleteTransaction(id)
         : props.deleteTransfer(id);
     },
     onGoToDetail: ({ navigation }) => ({ isTransaction, id }) => {
+      withProps(props => ({
+        concatenatedData: R.sortWith(
+          [R.descend(R.prop('date'))], R.concat(props.transactions, props.transfers)),
+       
+      }));
       navigation.navigate(isTransaction
         ? screens.TransactionDetail
         : screens.TransferDetail,
@@ -60,8 +74,9 @@ const enhance = compose(
   withProps(props => ({
     concatenatedData: R.sortWith(
       [R.descend(R.prop('date'))], R.concat(props.transactions, props.transfers)),
+   
   })),
-
+ 
  
   pure,
 );
