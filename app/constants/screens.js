@@ -26,6 +26,7 @@ export default {
 
   SettingsRoot: 'SettingsRoot',
   Settings: 'Settings',
+  MoreMenu: 'MoreMenu',
 
   FavouritesRoot: 'FavouritesRoot',
   Favourites: 'Favourites',
