@@ -26,7 +26,7 @@ const enhance = compose(
   withProps(props => ({
     // accounts: props.accounts.concat({ isAddButton: true }),
     onSelectAccount: getParam('onSelectAccount')(props.navigation) ||   goEditAccount(props.navigation),
-    onAddAccount: onNavigate(props.navigation, screens.AccountEditor, { title: 'Add an account' }),
+    onAddAccount: onNavigate(props.navigation, screens.AccountEditor, { title: 'Tạo tài khoản' }),
     onTranfer: getParam('onSelectAccount')(props.navigation) ||   goTranferAccount(props.navigation),
   })),
   withHandlers({
