@@ -42,7 +42,7 @@ const AccountEditor = ({
   isReadyForSubmit,
   isValidValue,
   note,
-  onChangeDate,
+  setDate,
   onChangeFrom,
   onChangeNote,
   onChangeTo,
@@ -86,8 +86,8 @@ const AccountEditor = ({
             />
             <DatePicker
               isSelected={false}
-              placeholder="Ngày khởi tạo"
-              onSelectDate={(none, d) => onChangeDate(d)}
+              placeholder="Ngày?"
+              onSelectDate={val => setDate(val)}
               containerStyle={s.marginVertical}
               // format={dateFormat.newAccountDateFormat}
               // mode="datetime"

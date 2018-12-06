@@ -3,6 +3,7 @@ import {
   compose,
   hoistStatics,
   withHandlers,
+  withState,
   withPropsOnChange,
 } from 'recompose';
 import { getParam } from '../../utils/navHelpers';
@@ -42,7 +43,8 @@ const enhance = compose(
   withSetter('from', {}, R.length),
   withSetter('value', '', checkValidValue, onChangeBalance),
   withSetter('to', {}, R.length),
-  withSetter('date', new Date()),
+  withState('date', 'setDate', new Date()),
+  // withSetter('date', new Date()),
   withSetter('note', ''),
 
   withPropsOnChange(['from'], props => {
@@ -53,7 +55,7 @@ const enhance = compose(
 
   withHandlers({
     onSubmit: ({ createTransfer, navigation, ...props }) => () => {
-      console.log(fields);
+      console.log(props);
       createTransfer({
         ...R.pick(fields, props),
         from: R.prop('id', props.from),
