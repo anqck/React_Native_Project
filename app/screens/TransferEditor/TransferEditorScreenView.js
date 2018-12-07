@@ -60,9 +60,9 @@ const AccountEditor = ({
         <ScrollView>
           <View style={[s.card, getBackgroundColor(from)]}>
             <AccountSelect
-              options={optionsFrom}
-              
-              onSelect={index => onChangeFrom(optionsFrom[index])}
+              options={optionsFrom} 
+              selectOption={account}             
+              onSelect={index => {onChangeFrom(optionsFrom[index]); console.log("OnSelect2");}}
             />
             <InputText
               placeholder="Giá trị"
@@ -117,7 +117,7 @@ const AccountEditor = ({
 
 
 AccountEditor.navigationOptions = () => ({
-  headerTitle: <HeaderTitle title="Transfer" />,
+  headerTitle: <HeaderTitle title="Chuyển tiền" />,
 });
 
 AccountEditor.propTypes = {

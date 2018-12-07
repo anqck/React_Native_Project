@@ -3,7 +3,7 @@ import screens from '../../constants/screens';
  import TransactionDetail from '../../screens/TransactionDetail';
  import Calculator from '../../screens/Calculator';
 import Transactions from '../../screens/Transactions'
-
+import TransferDetail from '../../screens/TransferDetail'
 import headerOptions from '../../utils/stackHeaderOptions';
 
 const TransactionsRoutes = {
@@ -19,6 +19,9 @@ const TransactionsRoutes = {
   },
   [screens.TransactionDetail]: {
     screen: TransactionDetail,
+  },
+  [screens.TransferDetail]: {
+    screen: TransferDetail,
   },
 };
 
