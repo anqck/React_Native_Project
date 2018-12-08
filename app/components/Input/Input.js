@@ -26,7 +26,7 @@ const Input = ({
   onFocus,
   onBlur,
   isNotValid,
-  isFocusColor = colors.green,
+  isFocusColor = colors.MainBlue,
   ...props
 }) => (
   <View style={containerStyle}>

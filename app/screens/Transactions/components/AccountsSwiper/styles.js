@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
 
   activeDot: {
-    backgroundColor: colors.green,
+    backgroundColor: colors.MainBlue,
   },
 
   accountsGroup: {

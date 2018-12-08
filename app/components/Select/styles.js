@@ -41,7 +41,7 @@ export default StyleSheet.create({
     color: colors.black,
   },
   selectedOption: {
-    backgroundColor: colors.green,
+    backgroundColor: colors.MainBlue,
   },
   selectedOptionText: {
     color: colors.white,
