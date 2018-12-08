@@ -24,7 +24,7 @@ const Calendar = ({
       >
         <NavIcon
           name="calendar"
-          tintColor={isActiveIcon ? colors.green : colors.greyDarker}
+          tintColor={isActiveIcon ? colors.MainBlue : colors.greyDarker}
         />
       </TouchableItem>
     </View>
@@ -42,7 +42,7 @@ const Calendar = ({
           startFromMonday
           allowRangeSelection
           maxDate={new Date()}
-          selectedDayColor={colors.green}
+          selectedDayColor={colors.MainBlue}
           selectedDayTextColor={colors.white}
           onDateChange={onSelectDate}
           textStyle={s.textStyle}

@@ -38,7 +38,7 @@ export default StyleSheet.create({
     color: colors.greyDarker,
   },
   btnConfirm: {
-    color: colors.green,
+    color: colors.MainBlue,
     fontSize: fontSizes.medium,
     fontWeight: '700',
   },
