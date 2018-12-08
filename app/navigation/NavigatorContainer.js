@@ -35,7 +35,7 @@ const enhance = compose(
       }
 
       props.setBackTimestamp(new Date().getTime());
-      ToastAndroid.show('Press again to close the app', ToastAndroid.SHORT);
+      ToastAndroid.show('Nhấn lần nữa để thoát ứng dụng', ToastAndroid.SHORT);
       return true;
     },
   }),
