@@ -11,7 +11,7 @@ import { colors } from '../../styles';
 const renderIcon = (icon, isSelected) => (
   <MaterialCommunityIcons
     {...icon}
-    style={[s.icon, isSelected && { color: colors.green }]}
+    style={[s.icon, isSelected && { color: colors.MainBlue }]}
   />
 );
 
@@ -26,7 +26,7 @@ const CustomDatePicker = ({
   defaultValue,
   onSelectDate,
   containerStyle,
-  colorIsSelected = colors.green,
+  colorIsSelected = colors.MainBlue,
   resetTrigger,
   ...props
 }) => (

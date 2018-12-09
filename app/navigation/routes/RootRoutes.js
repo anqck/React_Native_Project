@@ -11,10 +11,11 @@ import {
 
 import Bookmarks from '../../screens/Bookmarks';
 import AccountsNavigator from '../navigators/AccountsNavigator';
-import Calculator from '../../screens/Calculator';
+import Trends from '../../screens/Trends';
 import CalculatorNav from '../NavigatorTopTab';
 import CategoriesNavigator from '../navigators/CategoriesNavigator';
 import TransactionsNavigator from '../navigators/TransactionsNavigator';
+
 
 const Routes = {
         Bookmarks: {
@@ -64,7 +65,7 @@ const Routes = {
         //     })
         // },
         Private: {
-            screen: Bookmarks,
+            screen: Trends,
             navigationOptions: () => ({
                 
                 tabBarIcon: ({tintColor}) => (

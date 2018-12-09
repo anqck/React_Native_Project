@@ -57,6 +57,7 @@ export const getAccountsStats = createSelector(
     getAccountsEntities,
   ],
   (transIds, transEnt, date, categorEnt, categorType, accountsEnt) => {
+    
     const data = {};
     const type = categorType === 0 ? types.income : types.expense;
     transIds.forEach((id) => {
@@ -90,6 +91,8 @@ export const getTrendsStats = createSelector(
     getCategoriesEntities,
   ],
   (transIds, transEnt, date, categorEnt) => {
+    console.log('AAAAAAAAAAAAa');
+
     const data = {
       Income: {},
       Expense: {},
@@ -104,8 +107,9 @@ export const getTrendsStats = createSelector(
     const monthsDiff = moment(date.to).diff(date.from, 'month');
     const initialValue = {};
 
+
     if (monthsDiff <= 12) {
-      for (let i = 0; i <= monthsDiff; i++) { // eslint-disable-line
+      for (let i = 0; i <= monthsDiff; i++) {
         const key = moment(date.to).subtract(i, 'months').startOf('month');
         initialValue[key] = 0;
         data.tickValues.push(key.toString());
@@ -113,11 +117,13 @@ export const getTrendsStats = createSelector(
       data.Income = initialValue;
       data.Expense = initialValue;
     }
-
+    // console.log(data.Income);
     transIds.forEach((id) => {
       const transaction = transEnt[id];
       const period = !date.format ? date : { from: +date.startOf('day'), to: +date.endOf('day') };
+      
       if (inPeriod(period, transaction.date)) {
+   
         const type = categorEnt[transaction.category].type;
 
         const startOfMonth = moment(transaction.date).startOf('month').toString();
@@ -126,26 +132,57 @@ export const getTrendsStats = createSelector(
           data.tickValues.push(startOfMonth.toString());
         }
 
+
         const value = Math.abs(transaction.value);
         const currentValue = value + R.pathOr(0, [type, startOfMonth], data);
         if (currentValue > data.maxValue) data.maxValue = currentValue;
 
-        data[`total${type}`] = data[`total${type}`] + value;
+        
+        if(type===types.income)
 
-        data[type] = {
-          ...data[type],
-          [startOfMonth]: currentValue,
-        };
-
-        const otherType = type === types.income ? types.expense : types.income;
-        if (!R.pathOr(false, [otherType, startOfMonth], data)) {
-          data[otherType] = {
-            ...data[otherType],
-            [startOfMonth]: 0,
+        {
+          data[`totalIncome`] = data[`totalIncome`] + value;
+          data['Income'] = {
+            ...data['Income'],
+            [startOfMonth]: currentValue,
           };
+
+          if (!R.pathOr(false, ['Expense', startOfMonth], data)) {
+            data['Expense'] = {
+              ...data['Expense'],
+              [startOfMonth]: 0,
+            };
+          }
         }
+        
+        else
+        {
+          data[`totalExpense`] = data[`totalExpense`] + value;
+        
+          data['Expense'] = {
+            ...data['Expense'],
+            [startOfMonth]: currentValue,
+          };
+
+          if (!R.pathOr(false, ['Income', startOfMonth], data)) {
+            data['Income'] = {
+              ...data['Income'],
+              [startOfMonth]: 0,
+            };
+          }
+        }
+        
+       
+       
+
+
+        
+        
+
       }
     });
+
+    // console.log(data.Income);
 
     let Income = [];
     let Expense = [];
@@ -153,8 +190,13 @@ export const getTrendsStats = createSelector(
     R.forEachObjIndexed((val, key) => { Income.push({ y: val, date: key }); }, data.Income);
     R.forEachObjIndexed((val, key) => { Expense.push({ y: val, date: key }); }, data.Expense);
 
+ 
+    
+
     Income.sort((a, b) => +moment(a.date) - +moment(b.date));
     Expense.sort((a, b) => +moment(a.date) - +moment(b.date));
+
+    // console.log(Income);
 
     data.tickValues.sort((a, b) => +moment(a) - +moment(b));
 

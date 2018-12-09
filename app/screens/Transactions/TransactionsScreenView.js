@@ -71,7 +71,7 @@ const Transactions = ({
         <Subtitle
           style={s.subtitle}
           withoutPadding
-          leftText="Accounts"
+          leftText="Tài khoản"
           totalBalance={totalBalance}
         />
         <View style={{ paddingLeft: dimensions.halfIndent, paddingRight: dimensions.halfIndent }}>

@@ -15,7 +15,7 @@ const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 
 
 const Accounts = ({
-  accounts, onPress
+  accounts, onPress,onResetData
 }) => {
  
   const _renderItem = ({ item }) => (
@@ -38,7 +38,14 @@ const Accounts = ({
                         onLeftElementPress={() => {
 
                         }}
-                        onPress={() =>  onPress(item)}
+                        onPress={() =>  {
+                         
+                          typeof item.nav !== "undefined"?
+                            onPress(item):     onResetData()
+
+                          }
+                        
+                        }
                        
                     />
   );
@@ -52,8 +59,9 @@ const Accounts = ({
         leftText="Chức năng khác"
       />
       <FlatList
-        data={[{title: 'Danh sách yêu thích', subtitle:  'Danh sách các thu/chi ghi yêu thích được lưu', icon_type: 'font-awesome', icon: 'star', key: '1',nav: screens.Favourites},
-        {title: 'Danh sách các hạng mục thu/chi', subtitle:  'Danh sách các hạng mục thu/chi', icon: 'ios-list-box', icon_type: 'ionicon', key: '2',nav: screens.Categories}]}
+        data={[{title: 'Danh sách yêu thích', subtitle:  'Danh sách các thu/chi ghi yêu thích được lưu', icon_type: 'font-awesome', icon: 'star', key: '1',nav: screens.Favourites}
+        ,{title: 'Danh sách các hạng mục thu/chi', subtitle:  'Danh sách các hạng mục thu/chi', icon: 'ios-list-box', icon_type: 'ionicon', key: '2',nav: screens.Categories}
+        ,{title: 'Xóa dữ liệu', subtitle:  'Xóa tất cả dữ liệu', icon: 'md-close', icon_type: 'ionicon', key: '3'}]}
         renderItem={_renderItem}
         numColumns={1}
         style={s.paddingHorizontal}
