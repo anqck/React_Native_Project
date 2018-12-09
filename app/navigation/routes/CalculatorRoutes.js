@@ -2,8 +2,9 @@ import Calculator from '../../screens/Calculator';
 import React, { Component } from 'react';
 import { createStackNavigator,createBottomTabNavigator,createMaterialTopTabNavigator  } from 'react-navigation';
 import TransactionEditor from '../../screens/TransactionEditor'
-import screens from '../../constants/screens';
+import colors from '../../styles/colors';
 import Bookmarks from '../../screens/Bookmarks'
+import { StyleSheet, Text, View } from 'react-native';
 
 const ExpenseRoutes = {
     ExpenseCalculator: { screen: Calculator ,navigationOptions: () => ({
@@ -13,7 +14,7 @@ const ExpenseRoutes = {
     'AddExpense': { screen: TransactionEditor ,navigationOptions: () => ({
         tabBarLabel: 'CHI',
         tabBarVisible: false,
-      
+        
     })},
   };
   
@@ -73,14 +74,14 @@ const CalculatorRoutes = {
     IncomeCalculator: {
         screen: IncomeNav,
         navigationOptions: () => ({
-            tabBarLabel: 'THU',
+            tabBarLabel:  <Text style={{ fontSize: 15, color: colors.black ,fontWeight :'bold'}}> THU </Text>,
             
         })
     },
     ExpenseCalculator: {
         screen: ExpenseNav,
         navigationOptions: () => ({
-            tabBarLabel: 'CHI',
+            tabBarLabel:  <Text style={{ fontSize: 15, color: colors.black ,fontWeight :'bold'}}> CHI </Text>,
         })
     },
 

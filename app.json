@@ -8,16 +8,16 @@
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "primaryColor": "#8BC34A",
-    "androidStatusBarColor": "#27ae60",
+    "primaryColor": "#48A2F8",
+    "androidStatusBarColor": "#48A2F8",
     "androidStatusBar": {
-      "backgroundColor": "#27ae60",
+      "backgroundColor": "#48A2F8",
       "barStyle": "dark-content"
     },
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/images/logo.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./app/assets/images/splash.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {

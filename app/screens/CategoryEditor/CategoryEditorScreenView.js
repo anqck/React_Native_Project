@@ -42,7 +42,7 @@ const CategoryEditor = (props) => {
           isVisible={isPickerVisible}
           hideModal={togglePicker}
           selectedIconName={icon}
-        />
+      />
         <View>
           <View style={s.container}>
             <View style={s.secondContainer}>
