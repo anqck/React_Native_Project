@@ -36,6 +36,13 @@ const CategoryEditor = (props) => {
   return (
     <View style={s.root}>
       <ScreenWrapper>
+      <IconsPickerModal
+          icons={icons}
+          onIconPick={onChangeIcon}
+          isVisible={isPickerVisible}
+          hideModal={togglePicker}
+          selectedIconName={icon}
+        />
         <View>
           <View style={s.container}>
             <View style={s.secondContainer}>
@@ -72,13 +79,7 @@ const CategoryEditor = (props) => {
           }
 
         </View>
-        <IconsPickerModal
-          icons={icons}
-          onIconPick={onChangeIcon}
-          isVisible={isPickerVisible}
-          hideModal={togglePicker}
-          selectedIconName={icon}
-        />
+       
       </ScreenWrapper>
 
       <KeyboardAvoidingView withHeader>
