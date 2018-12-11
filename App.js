@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 
 import {App1, BaseNavigator} from "./app/navigation";
 import styles from './app/styles/AppStyles';
-
+import Navigator from './app/navigation/NavigatorContainer';
 import { store, persistor } from './app/store';
 const UIManager = NativeModules.UIManager;
 
@@ -29,7 +29,7 @@ export default class App extends React.Component {
           />
            <Provider store={store}>
         <PersistGate persistor={persistor}>
-          <App1/>
+            <Navigator/>
           </PersistGate>
       </Provider>
         </View>
