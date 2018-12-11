@@ -5,7 +5,7 @@ import { NavigationActions } from 'react-navigation';
 import { compose, branch, renderComponent, lifecycle, withState, withHandlers } from 'recompose';
 import { AppLoading } from 'expo';
 import NavigatorView from './NavigatorView';
-import { isRootScreen } from '../utils/navHelpers';
+// import { isRootScreen } from '../utils/navHelpers';
 // import { store } from '../store';
 // import settingsOperations from '../modules/settings/operations';
 

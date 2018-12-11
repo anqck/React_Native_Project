@@ -20,6 +20,7 @@
     "react-native-view-overflow": "^0.0.3",
     "react-navigation": "^3.0.4",
     "react-redux": "^6.0.0",
+    "recompose": "^0.30.0",
     "redux": "^4.0.1",
     "redux-actions": "^2.6.4",
     "redux-persist": "^5.10.0",

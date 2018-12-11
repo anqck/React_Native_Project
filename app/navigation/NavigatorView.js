@@ -4,7 +4,10 @@ import { addNavigationHelpers } from 'react-navigation';
 import Navigator from './BaseNavigator';
 
 const NavigatorView = ({ dispatch, navigator }) => (
-  <Navigator navigation={addNavigationHelpers({ dispatch, state: navigator })} />
+  <Navigator navigation={{
+    dispatch,
+    state: navigator,
+ }} />
 );
 
 NavigatorView.propTypes = {

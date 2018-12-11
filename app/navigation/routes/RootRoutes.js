@@ -1,16 +1,7 @@
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import screens from '../../constants/screens';
 import Bookmarks from '../../screens/Bookmarks';
 
-import {
-  AccountsNavigator,
-  CategoriesNavigator,
-  SettingsNavigator,
-  TransactionsNavigator,
-  TrendsNavigator,
-  FavouritesNavigator,
-} from '../navigators';
 
 const Routes = {
         Bookmarks: {

@@ -100,7 +100,7 @@
 // const App1 = createAppContainer(BaseNavigator);
 // export {App1};
 
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator, createStackNavigator } from 'react-navigation';
 import screens from '../constants/screens';
 import { OnBoarding } from '../screens';
 import NavigatorTab from './NavigatorTab';
@@ -115,6 +115,6 @@ const routes = {
   },
 };
 
-export default StackNavigator(routes);
+export default createStackNavigator(routes);
 
 
