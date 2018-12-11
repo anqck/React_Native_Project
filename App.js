@@ -8,7 +8,7 @@ import styles from './app/styles/AppStyles';
 import Navigator from './app/navigation/NavigatorContainer';
 import { store, persistor } from './app/store';
 import { appOperations } from './app/modules/app';
-
+import { lifecycle } from 'recompose';
 
 const App = () => (
 <MenuProvider>
