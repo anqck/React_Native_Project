@@ -2,10 +2,13 @@ import React from 'react';
 import {NativeModules, StatusBar, Text, View } from 'react-native';
 import { COLOR } from 'react-native-material-ui';
 import { MenuProvider } from 'react-native-popup-menu';
+import { PersistGate } from 'redux-persist/es/integration/react';
+import { Provider } from 'react-redux';
 
 import {App1, BaseNavigator} from "./app/navigation";
 import styles from './app/styles/AppStyles';
 
+import { store, persistor } from './app/store';
 const UIManager = NativeModules.UIManager;
 
 const uiTheme = {
@@ -24,7 +27,11 @@ export default class App extends React.Component {
             barStyle="dark-content"
             backgroundColor={COLOR.white}
           />
+           <Provider store={store}>
+        <PersistGate persistor={persistor}>
           <App1/>
+          </PersistGate>
+      </Provider>
         </View>
       </MenuProvider>
     );
