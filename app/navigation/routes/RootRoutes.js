@@ -9,9 +9,8 @@ import {
     Ionicons,
   } from '@expo/vector-icons';
 
-import Bookmarks from '../../screens/Bookmarks';
 import AccountsNavigator from '../navigators/AccountsNavigator';
-import Trends from '../../screens/Trends';
+import TrendsNavigator from '../navigators/TrendsNavigator';
 import CalculatorNav from '../NavigatorTopTab';
 import CategoriesNavigator from '../navigators/CategoriesNavigator';
 import TransactionsNavigator from '../navigators/TransactionsNavigator';
@@ -65,7 +64,7 @@ const Routes = {
         //     })
         // },
         Private: {
-            screen: Trends,
+            screen: TrendsNavigator,
             navigationOptions: () => ({
                 
                 tabBarIcon: ({tintColor}) => (
