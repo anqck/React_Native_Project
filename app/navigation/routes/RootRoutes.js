@@ -19,7 +19,7 @@ const Routes = {
                 tabBarLabel: '',
                 tabBarIcon: ({tintColor}) => (
                     <Icon
-                        name="heart"
+                        name="home"
                         color={tintColor}
                         size={24}
                     />
@@ -56,8 +56,8 @@ const Routes = {
             screen: Bookmarks,
             navigationOptions: () => ({
                 tabBarIcon: ({tintColor}) => (
-                    <Icon
-                        name="lock"
+                    <MaterialIcons
+                        name="insert-chart"
                         color={tintColor}
                         size={24}
                     />
@@ -69,7 +69,7 @@ const Routes = {
             navigationOptions: () => ({
                 tabBarIcon: ({tintColor}) => (
                     <Icon
-                        name="user"
+                        name="cog"
                         color={tintColor}
                         size={24}
                     />
