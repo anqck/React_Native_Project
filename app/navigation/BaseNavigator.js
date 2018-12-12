@@ -115,6 +115,8 @@ const routes = {
   },
 };
 
-export default StackNavigator(routes);
+
+
+export default createStackNavigator(routes);
 
 

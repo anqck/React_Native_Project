@@ -4,10 +4,15 @@ import thunk from 'redux-thunk';
 import devToolsEnhancer from 'remote-redux-devtools';
 import reducer from './modules';
 
+
+
+
+
 const enhancer = compose(
   applyMiddleware(thunk),
   devToolsEnhancer({ realtime: true }),
 );
+
 
 const configureStore = () => {
   const store = createStore(
