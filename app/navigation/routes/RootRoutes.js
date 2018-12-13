@@ -11,11 +11,11 @@ import {
 
 import Bookmarks from '../../screens/Bookmarks';
 import AccountsOverview from '../../screens/AccountsOverview';
-
+import Calculator from '../../screens/Calculator';
 
 const Routes = {
         Bookmarks: {
-            screen: Bookmarks,
+            screen: Calculator,
             navigationOptions: () => ({
                 tabBarLabel: '',
                 tabBarIcon: ({tintColor}) => (
