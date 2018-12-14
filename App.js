@@ -15,7 +15,7 @@ const App = () => (
         <View style={styles.rootStyle}>
           <StatusBar
             barStyle="dark-content"
-            backgroundColor={COLOR.white}
+            backgroundColor='#48A2F8'
           />
          
            <Provider store={store}>

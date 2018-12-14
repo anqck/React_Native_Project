@@ -45,7 +45,7 @@ const Calculator = (props) => {
           <View style={s.buttonsGroup}>
             <Row tokens={['1', '2', '3']} />
           </View>
-          <CalcButton token="C" onPress={onSwitch} />
+          <CalcButton token="C" onPress={onClear} />
         </View>
         <View style={s.keyboardRowStyle}>
           <View style={s.buttonsGroup}>

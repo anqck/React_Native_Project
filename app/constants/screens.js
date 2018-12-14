@@ -5,7 +5,7 @@ export default {
   TransactionsStatistics: 'TransactionsStatistics',
 
   TransactionEditorRoot: 'TransactionEditorRoot',
-  TransactionEditor: 'TransactionEditor',
+  TransactionEditor: 'Bookmarks',
   TransactionDetail: 'TransactionDetail',
   AccountDetail: 'AccountDetail',
 

@@ -4,6 +4,8 @@ import R from 'ramda';
 import CalculatorScreenView from './CalculatorScreenView';
 import screens from '../../constants/screens';
 import { withPickParams, withPaschal } from '../../utils/enhancers';
+import Bookmarks from '../Bookmarks'
+
 
 const defaultExpr = '0';
 
@@ -55,11 +57,12 @@ const enhance = compose(
     onSubmitResult: ({ expr, navigation, id, isIncome }) => () => {
       withPaschal(expr);
       navigation.navigate(
-        screens.TransactionEditor, { value: isIncome ? +expr : -expr, id, isIncome });
+        'AddExpense', { value: isIncome ? +expr : -expr, id, isIncome });
     },
   }),
 
   lifecycle({
+    
     componentDidMount() {
       const { setIsIncome, value, updateExpr, type } = this.props;
 
