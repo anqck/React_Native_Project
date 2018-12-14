@@ -6,7 +6,7 @@ const Logo = () => (
   <Icon
     name="logo"
     width={80}
-    height={20}
+    height={40}
   />
 );
 

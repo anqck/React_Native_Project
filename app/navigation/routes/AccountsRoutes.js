@@ -6,7 +6,7 @@ import headerOptions from '../../utils/stackHeaderOptions';
 
 const Routes = {
   1: {
-    screen: Bookmarks,
+    screen: Accounts,
     // navigationOptions: headerOptions(),
   },
 
