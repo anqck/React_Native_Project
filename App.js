@@ -17,6 +17,7 @@ const App = () => (
             barStyle="dark-content"
             backgroundColor={COLOR.white}
           />
+         
            <Provider store={store}>
               <PersistGate persistor={persistor}>
                  <Navigator/>
