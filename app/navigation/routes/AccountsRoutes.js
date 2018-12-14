@@ -1,15 +1,17 @@
 import screens from '../../constants/screens';
 import Accounts from '../../screens/Accounts';
-import Bookmarks from '../../screens/Bookmarks'
+import AccountEditor from '../../screens/AccountEditor'
 
 import headerOptions from '../../utils/stackHeaderOptions';
 
 const Routes = {
-  1: {
+  [screens.Accounts]: {
     screen: Accounts,
-    // navigationOptions: headerOptions(),
+    navigationOptions: headerOptions(),
   },
-
+  [screens.AccountEditor]: {
+    screen: AccountEditor,
+  },
 };
 
 export default Routes;

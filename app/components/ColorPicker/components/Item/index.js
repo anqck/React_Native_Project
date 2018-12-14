@@ -3,7 +3,7 @@ import { TouchableOpacity, View } from 'react-native';
 import T from 'prop-types';
 
 import s from './styles';
-import { Icon } from '../../../index';
+import Icon  from '../../../Icon';
 import { moderateScale } from '../../../../styles/scalingUtils';
 
 const Item = ({ color, isSelected, onPress, ...props }) => (

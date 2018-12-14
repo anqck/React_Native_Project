@@ -2,10 +2,11 @@ import React from 'react';
 import T from 'prop-types';
 import { View } from 'react-native';
 import Modal from 'react-native-modal';
-import { Text } from '../index';
+import Text  from '../Text';
 import s from './styles';
 import { chartPalette } from '../../styles/colors';
-import { Button, Item } from './components';
+import Button from './components/Button';
+import  Item from './components/Item';
 
 const arrChartPalette = Object.values(chartPalette);
 
