@@ -42,12 +42,12 @@ const AccountEditor = ({
             onPress={onToggleColorPicker}
             style={[s.colorPickerContainer, { backgroundColor: color }]}
           />
-          <Text style={s.label}>Choose color</Text>
+          <Text style={s.label}>Chọn màu</Text>
         </View>
         <Input
           isValid
           maxLength={18}
-          placeholder="Account name"
+          placeholder="Tên tài khoản"
           value={name}
           onChangeText={onNameChange}
           containerStyle={s.root}
@@ -57,7 +57,7 @@ const AccountEditor = ({
         <Input
           isValid
           // maxLength={6}
-          placeholder="Initial balance"
+          placeholder="Số dư ban đầu"
           value={initialBalance ? initialBalance.toString() : ''}
           onChangeText={onChangeBalance}
           keyboardType="numeric"
@@ -71,7 +71,7 @@ const AccountEditor = ({
       {isValid &&
       <Button
         borderless
-        title="Save"
+        title="Lưu"
         onPress={onSubmit}
       />
       }
@@ -81,7 +81,7 @@ const AccountEditor = ({
 
 AccountEditor.navigationOptions = ({ navigation }) => ({
   headerTitle:
-  <HeaderTitle title={getParam('account')(navigation) ? 'Edit account' : 'New account'} />,
+  <HeaderTitle title={getParam('account')(navigation) ? 'Chỉnh sửa tài khoản' : 'Tạo tài khoản'} />,
   headerRight: <DeleteButton navigation={navigation} />,
 });
 
