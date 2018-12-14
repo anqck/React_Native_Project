@@ -1,6 +1,7 @@
 import { compose, withHandlers, withState, withProps, defaultProps, hoistStatics } from 'recompose';
 import R from 'ramda';
 import { connect } from 'react-redux';
+
 import { Keyboard } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AccountEditorScreenView from './AccountEditorScreenView';
@@ -43,6 +44,7 @@ const onSubmit = ({
   const editedProps =
     R.pick(['name', 'currency', 'date', 'initialBalance', 'balance', 'color'], props);
   const propsToSubmit = account ? { id: account.id, ...editedProps } : editedProps;
+  console.log(propsToSubmit);
   submit(propsToSubmit);
   navigation.dispatch(NavigationActions.back());
 };

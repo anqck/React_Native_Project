@@ -3,6 +3,7 @@ import { persistCombineReducers } from 'redux-persist';
 import app from './app';
 import navigator from './navigator';
 import settings from './settings';
+import accounts from './accounts';
 
 const config = {
   key: 'root',
@@ -17,6 +18,7 @@ const config = {
 };
 
 const appReducer = {
+  accounts,
   app,
   navigator,
   settings,
