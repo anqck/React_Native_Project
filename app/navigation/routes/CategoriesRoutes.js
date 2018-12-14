@@ -1,10 +1,8 @@
 import screens from '../../constants/screens';
 import Categories from '../../screens/Categories';
-import CategoryEditor from '../../screens/CategoryEditor'
-import MoreMenu from '../../screens/MoreMenu';
+import CategoryEditor from '../../screens/CategoryEditor';
 import Favourites from '../../screens/Favourites';
-
-import headerOptions from '../../utils/stackHeaderOptions';
+import MoreMenu from '../../screens/MoreMenu';
 
 const CategoriesRoutes = {
   [screens.MoreMenu]: {

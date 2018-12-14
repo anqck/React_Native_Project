@@ -1,10 +1,11 @@
-import { connect } from 'react-redux';
-import R from 'ramda';
-import { Platform, BackHandler, ToastAndroid } from 'react-native'; //eslint-disable-line
-import { NavigationActions } from 'react-navigation';
-import { compose, branch, renderComponent, lifecycle, withState, withHandlers } from 'recompose';
 import { AppLoading } from 'expo';
+import R from 'ramda';
+import { BackHandler, Platform, ToastAndroid } from 'react-native';
+import { connect } from 'react-redux';
+import { branch, compose, lifecycle, renderComponent, withHandlers, withState } from 'recompose';
+
 import NavigatorView from './NavigatorView';
+
 // import { isRootScreen } from '../utils/navHelpers';
 // import { store } from '../store';
 // import settingsOperations from '../modules/settings/operations';

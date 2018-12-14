@@ -1,17 +1,11 @@
-import React from 'react';
-import { View, Text } from 'react-native';
 import T from 'prop-types';
+import React from 'react';
+import { Text, View } from 'react-native';
 
-import {
-  ScreenWrapper,
-  HeaderTitle,
-  CategoryIcon,
-  Value,
-  Separator,
-} from '../../components';
-import s from './styles';
-import { dimensions, colors } from '../../styles';
+import { CategoryIcon, HeaderTitle, ScreenWrapper, Separator, Value } from '../../components';
+import { colors, dimensions } from '../../styles';
 import { dateWithTime } from '../../utils/dateHelpers';
+import s from './styles';
 
 const TransferDetail = ({
   fromName,

@@ -1,9 +1,9 @@
 import colors, { chartPalette } from './colors';
-import fontSizes from './fontSizes';
-import * as dimensions from './dimensions';
-import * as scalingUtils from './scalingUtils';
-import fontWeights from './fontWeights';
 import cx from './cx';
+import * as dimensions from './dimensions';
+import fontSizes from './fontSizes';
+import fontWeights from './fontWeights';
+import * as scalingUtils from './scalingUtils';
 
 
 export {

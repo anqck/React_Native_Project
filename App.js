@@ -1,14 +1,14 @@
 import React from 'react';
-import {NativeModules, StatusBar, Text, View } from 'react-native';
-import { COLOR } from 'react-native-material-ui';
+import { StatusBar, View } from 'react-native';
 import { MenuProvider } from 'react-native-popup-menu';
-import { PersistGate } from 'redux-persist/es/integration/react';
 import { Provider } from 'react-redux';
-import styles from './app/styles/AppStyles';
-import Navigator from './app/navigation/NavigatorContainer';
-import { store, persistor } from './app/store';
-import { appOperations } from './app/modules/app';
 import { lifecycle } from 'recompose';
+import { PersistGate } from 'redux-persist/es/integration/react';
+
+import { appOperations } from './app/modules/app';
+import Navigator from './app/navigation/NavigatorContainer';
+import { persistor, store } from './app/store';
+import styles from './app/styles/AppStyles';
 
 console.ignoredYellowBox = ['MenuContext', 'Deprecation warning'];
 

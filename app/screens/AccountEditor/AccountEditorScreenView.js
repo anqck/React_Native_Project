@@ -1,17 +1,10 @@
-import React from 'react';
-import { View, TouchableOpacity } from 'react-native';
 import T from 'prop-types';
+import React from 'react';
+import { TouchableOpacity, View } from 'react-native';
+
+import { Button, ColorPicker, HeaderTitle, Input, KeyboardAvoidingView, ScreenWrapper, Text } from '../../components';
 import { getParam } from '../../utils/navHelpers';
 import DeleteButton from './DeleteButton';
-import {
-  Input,
-  Button,
-  ColorPicker,
-  Text,
-  KeyboardAvoidingView,
-  ScreenWrapper,
-  HeaderTitle,
-} from '../../components';
 import s from './styles';
 
 const AccountEditor = ({

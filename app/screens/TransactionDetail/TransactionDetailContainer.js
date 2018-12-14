@@ -1,14 +1,11 @@
-import {
-  compose,
-  hoistStatics,
-  lifecycle,
-} from 'recompose';
 import R from 'ramda';
 import { connect } from 'react-redux';
-import TransactionDetailScreenView from './TransactionDetailScreenView';
-import { withPickParams } from '../../utils/enhancers';
+import { compose, hoistStatics, lifecycle } from 'recompose';
+
 import screens from '../../constants/screens';
+import { withPickParams } from '../../utils/enhancers';
 import { getParam } from '../../utils/navHelpers';
+import TransactionDetailScreenView from './TransactionDetailScreenView';
 
 const mapStateToProps = (state, props) => {
   const transaction = R.pathOr({}, ['transactions', 'byId', props.id], state);

@@ -1,12 +1,13 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { View } from 'react-native';
 import R from 'ramda';
+import React from 'react';
+import { View } from 'react-native';
+
+import { Button, HeaderTitle, Value } from '../../components';
+import { colors } from '../../styles';
+import { getParam } from '../../utils/navHelpers';
 import CalcButton from './components/CalculatorButton';
 import s from './styles';
-import { colors } from '../../styles';
-import { HeaderTitle, Button, Value } from '../../components';
-import { getParam } from '../../utils/navHelpers';
 
 const Button2 = onPress => token => <CalcButton key={token} token={token} onPress={onPress} />;
 

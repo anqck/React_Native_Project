@@ -1,10 +1,11 @@
+import React, { Component } from 'react';
+import { Text } from 'react-native';
 
 import screens from '../../constants/screens';
-import Trends from '../../screens/Trends';
 import TransactionsStatistics from '../../screens/TransactionsStatistics';
-import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Trends from '../../screens/Trends';
 import colors from '../../styles/colors';
+
 
 const TrendsRoutes = {
     [screens.Trends]: {

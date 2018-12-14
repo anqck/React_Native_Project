@@ -1,13 +1,8 @@
-import React from 'react';
 import T from 'prop-types';
+import React from 'react';
 import { View } from 'react-native';
-import {
-  Subtitle,
-  DateFilter,
-  FlatList,
-  Separator,
-  TransactionItem,
-} from '../../components';
+
+import { DateFilter, FlatList, Separator, Subtitle, TransactionItem } from '../../components';
 import s from './styles';
 
 

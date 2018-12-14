@@ -1,6 +1,7 @@
-import { createStackNavigator,StackNavigator } from 'react-navigation';
-import TransactionsRountes from '../routes/TransactionsRountes';
+import { createStackNavigator } from 'react-navigation';
+
 import navOptions from '../../utils/navOptions';
+import TransactionsRountes from '../routes/TransactionsRountes';
 
 const TransactionsNavigator = createStackNavigator(TransactionsRountes, {
   ...navOptions({

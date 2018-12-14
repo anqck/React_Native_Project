@@ -1,19 +1,13 @@
+import { Entypo, MaterialIcons } from '@expo/vector-icons';
 import React, { Component } from 'react';
+import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {TouchableWithoutFeedback, View} from "react-native";
-import {
-    MaterialIcons,
-    MaterialCommunityIcons,
-    SimpleLineIcons,
-    Entypo,
-    Ionicons,
-  } from '@expo/vector-icons';
 
 import AccountsNavigator from '../navigators/AccountsNavigator';
-import TrendsNavigator from '../navigators/TrendsNavigator';
-import CalculatorNav from '../NavigatorTopTab';
 import CategoriesNavigator from '../navigators/CategoriesNavigator';
 import TransactionsNavigator from '../navigators/TransactionsNavigator';
+import TrendsNavigator from '../navigators/TrendsNavigator';
+import CalculatorNav from '../NavigatorTopTab';
 
 
 const Routes = {

@@ -1,10 +1,10 @@
-import Calculator from '../../screens/Calculator';
 import React, { Component } from 'react';
-import { createStackNavigator,createBottomTabNavigator,createMaterialTopTabNavigator  } from 'react-navigation';
-import TransactionEditor from '../../screens/TransactionEditor'
+import { Text } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
+
+import Calculator from '../../screens/Calculator';
+import TransactionEditor from '../../screens/TransactionEditor';
 import colors from '../../styles/colors';
-import Bookmarks from '../../screens/Bookmarks'
-import { StyleSheet, Text, View } from 'react-native';
 
 const ExpenseRoutes = {
     ExpenseCalculator: { screen: Calculator ,navigationOptions: () => ({

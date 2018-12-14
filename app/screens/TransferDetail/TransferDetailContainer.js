@@ -1,11 +1,9 @@
-import {
-  compose,
-  hoistStatics,
-} from 'recompose';
 import R from 'ramda';
 import { connect } from 'react-redux';
-import TransferDetailScreenView from './TransferDetailScreenView';
+import { compose, hoistStatics } from 'recompose';
+
 import { withPickParams } from '../../utils/enhancers';
+import TransferDetailScreenView from './TransferDetailScreenView';
 
 const mapStateToProps = (state, props) => {
   const transfer = R.pathOr({}, ['transfers', 'byId', props.id], state);

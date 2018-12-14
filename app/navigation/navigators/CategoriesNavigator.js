@@ -1,6 +1,7 @@
-import { createStackNavigator,StackNavigator } from 'react-navigation';
-import CategoriesRoutes from '../routes/CategoriesRoutes';
+import { createStackNavigator } from 'react-navigation';
+
 import navOptions from '../../utils/navOptions';
+import CategoriesRoutes from '../routes/CategoriesRoutes';
 
 const CategoriesNavigator = createStackNavigator(CategoriesRoutes, {
   ...navOptions({

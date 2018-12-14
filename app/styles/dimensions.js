@@ -1,4 +1,5 @@
-import { Platform, Dimensions } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
+
 import { moderateScale, verticalScale } from './scalingUtils';
 
 const { width } = Dimensions.get('window');

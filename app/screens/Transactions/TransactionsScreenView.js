@@ -1,19 +1,12 @@
-import React from 'react';
 import T from 'prop-types';
 import R from 'ramda';
-import { Animated, View, FlatList } from 'react-native';
-import screens from '../../constants/screens';
+import React from 'react';
+import { Animated, FlatList, View } from 'react-native';
+
+import { DateFilter, EmptyList, Separator, Subtitle, TransactionItem } from '../../components';
+import { dimensions } from '../../styles';
 import { AccountsSwiper } from './components';
-import {
-  Subtitle,
-  Separator,
-  DateFilter,
-  TransactionItem,
-  EmptyList,
-} from '../../components';
 import s from './styles';
-import { colors, dimensions } from '../../styles';
-import NavigationButton from '../../components/NavigationButton';
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 

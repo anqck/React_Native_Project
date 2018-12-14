@@ -1,4 +1,4 @@
-import { TabNavigator,createBottomTabNavigator  } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 
 import Routes from './routes/RootRoutes';
 

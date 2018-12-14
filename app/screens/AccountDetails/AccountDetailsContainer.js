@@ -1,22 +1,16 @@
-import {
-  compose,
-  withHandlers,
-  withState,
-  hoistStatics,
-  lifecycle,
-  withProps,
-} from 'recompose';
 import R from 'ramda';
 import { connect } from 'react-redux';
-import TransactionsScreenView from './AccountDetailsScreenView';
+import { compose, hoistStatics, lifecycle, withHandlers, withProps, withState } from 'recompose';
+
+import screens from '../../constants/screens';
+import { getTotalBalance } from '../../modules/accounts/selectors';
 import { transactionsOperations } from '../../modules/transactions';
+import { getCurrentAccountTransaction } from '../../modules/transactions/selectors';
 import { transfersOperations } from '../../modules/transfers';
 import { getCurrentAccountTransfers } from '../../modules/transfers/selectors';
-import { getCurrentAccountTransaction } from '../../modules/transactions/selectors';
-import { getTotalBalance } from '../../modules/accounts/selectors';
 import { startOfDay } from '../../utils/dateHelpers';
 import { getParam } from '../../utils/navHelpers';
-import screens from '../../constants/screens';
+import TransactionsScreenView from './AccountDetailsScreenView';
 
 
 const mapStateToProps = (state, props) => ({

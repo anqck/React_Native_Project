@@ -1,12 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { addNavigationHelpers } from 'react-navigation';
-import Navigator from './BaseNavigator';
+import React from 'react';
+import { createReactNavigationReduxMiddleware, createReduxBoundAddListener } from 'react-navigation-redux-helpers';
 
-import {
-  createReduxBoundAddListener,
-  createReactNavigationReduxMiddleware,
-} from 'react-navigation-redux-helpers';
+import Navigator from './BaseNavigator';
 
 const middleware = createReactNavigationReduxMiddleware(
   "root",

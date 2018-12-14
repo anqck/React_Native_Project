@@ -1,24 +1,15 @@
-import {
-  compose,
-  hoistStatics,
-  withHandlers,
-  withProps,
-  withPropsOnChange,
-  withState,
-  lifecycle,
-} from 'recompose';
 import R from 'ramda';
-import { connect } from 'react-redux';
-import TransactionEditorScreenView from './TransactionEditorScreenView';
-import { getParam } from '../../utils/navHelpers';
-import { getAccounts } from '../../modules/accounts/selectors';
-import { transactionsOperations } from '../../modules/transactions';
-import { getExpenseCategory, getIncomeCategory } from '../../modules/categories/selectors';
-import { colors } from '../../styles';
-import types from '../../modules/navigator/types';
-import { NavigationActions } from 'react-navigation';
 import Toast from 'react-native-simple-toast';
-import screens from '../../constants/screens'
+import { connect } from 'react-redux';
+import { compose, hoistStatics, lifecycle, withHandlers, withProps, withPropsOnChange, withState } from 'recompose';
+
+import screens from '../../constants/screens';
+import { getAccounts } from '../../modules/accounts/selectors';
+import { getExpenseCategory, getIncomeCategory } from '../../modules/categories/selectors';
+import { transactionsOperations } from '../../modules/transactions';
+import { colors } from '../../styles';
+import { getParam } from '../../utils/navHelpers';
+import TransactionEditorScreenView from './TransactionEditorScreenView';
 
 const requiredProps = ['value', 'account', 'category', 'date'];
 

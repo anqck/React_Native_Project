@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import { PropsProxyHOC, Logo, DrawerIcon } from '../components';
+
+import { DrawerIcon, Logo, PropsProxyHOC } from '../components';
 import styles from '../styles/AppStyles';
 
 

@@ -1,4 +1,5 @@
 import R from 'ramda';
+
 import { categoriesTypes } from '../constants/categories';
 
 export const eqAccount = accountId => R.propEq('account', accountId);

@@ -1,16 +1,14 @@
-import {
-  compose, withHandlers, withState, withProps, defaultProps, hoistStatics,
-  withPropsOnChange,
-} from 'recompose';
 import R from 'ramda';
-import { connect } from 'react-redux';
 import { Keyboard } from 'react-native';
-import CategoryEditor from './CategoryEditorScreenView';
-import { getParam } from '../../utils/navHelpers';
-import { dimensions } from '../../styles';
-import { categoriesOperations } from '../../modules/categories';
+import { connect } from 'react-redux';
+import { compose, defaultProps, hoistStatics, withHandlers, withProps, withPropsOnChange, withState } from 'recompose';
+
 import { categoriesTypes } from '../../constants/categories';
 import icons from '../../constants/categoryIcons';
+import { categoriesOperations } from '../../modules/categories';
+import { dimensions } from '../../styles';
+import { getParam } from '../../utils/navHelpers';
+import CategoryEditor from './CategoryEditorScreenView';
 
 
 const accountProp = (propName, def) => R.pathOr(def, ['category', propName]);

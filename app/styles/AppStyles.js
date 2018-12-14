@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
+
 import colors from './colors';
-import { indent, doubleIndent, headerHeight, halfIndent } from './dimensions';
+import { doubleIndent, halfIndent, headerHeight, indent } from './dimensions';
 
 const styles = StyleSheet.create({
   blockStyle: {

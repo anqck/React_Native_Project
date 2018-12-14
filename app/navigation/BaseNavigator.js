@@ -3,6 +3,11 @@
 // import {TouchableWithoutFeedback, View} from "react-native";
 // import {createBottomTabNavigator,  TabNavigator, StackNavigator,createAppContainer} from 'react-navigation';
 // import ViewOverflow from 'react-native-view-overflow';
+import { createStackNavigator } from 'react-navigation';
+
+import screens from '../constants/screens';
+import NavigatorTab from './NavigatorTab';
+
 
 // import AccountsOverview from '../screens/AccountsOverview';
 
@@ -99,11 +104,6 @@
 
 // const App1 = createAppContainer(BaseNavigator);
 // export {App1};
-
-import { StackNavigator, createStackNavigator } from 'react-navigation';
-import screens from '../constants/screens';
-import { OnBoarding } from '../screens';
-import NavigatorTab from './NavigatorTab';
 
 const routes = {
   [screens.TabbedRoot]: {

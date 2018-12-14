@@ -1,22 +1,14 @@
-import {
-  compose,
-  withHandlers,
-  withState,
-  hoistStatics,
-  lifecycle, withProps,
-} from 'recompose';
 import R from 'ramda';
 import { connect } from 'react-redux';
-import FavouritesScreenView from './FavouritesScreenView';
-import { transactionsOperations } from '../../modules/transactions';
-import { transfersOperations } from '../../modules/transfers';
-import { getFavouritesTransactions } from '../../modules/transactions/selectors';
-import { getFavouritesTransfers } from '../../modules/transfers/selectors';
+import { compose, hoistStatics, lifecycle, withHandlers, withProps, withState } from 'recompose';
 
-import {
-  startOfDay,
-} from '../../utils/dateHelpers';
 import screens from '../../constants/screens';
+import { transactionsOperations } from '../../modules/transactions';
+import { getFavouritesTransactions } from '../../modules/transactions/selectors';
+import { transfersOperations } from '../../modules/transfers';
+import { getFavouritesTransfers } from '../../modules/transfers/selectors';
+import { startOfDay } from '../../utils/dateHelpers';
+import FavouritesScreenView from './FavouritesScreenView';
 
 
 const mapStateToProps = (state, props) => ({

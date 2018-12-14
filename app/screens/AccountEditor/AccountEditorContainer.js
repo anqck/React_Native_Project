@@ -1,13 +1,13 @@
-import { compose, withHandlers, withState, withProps, defaultProps, hoistStatics } from 'recompose';
 import R from 'ramda';
-import { connect } from 'react-redux';
-
 import { Keyboard } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import AccountEditorScreenView from './AccountEditorScreenView';
+import { connect } from 'react-redux';
+import { compose, defaultProps, hoistStatics, withHandlers, withProps, withState } from 'recompose';
+
+import { accountsOperations } from '../../modules/accounts';
+import { chartPalette, dimensions } from '../../styles';
 import { getParam } from '../../utils/navHelpers';
-import { dimensions, chartPalette } from '../../styles';
-import { accountsOperations } from '../../modules/accounts/index';
+import AccountEditorScreenView from './AccountEditorScreenView';
 
 
 const accountProp = (propName, def) => R.pathOr(def, ['account', propName]);

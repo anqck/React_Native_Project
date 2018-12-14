@@ -1,7 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { View, ViewPropTypes } from 'react-native';
-import { Button } from '../../../../components/index';
+
+import { Button } from '../../../../components';
 import colors from '../../../../styles/colors';
 import s from './styles';
 

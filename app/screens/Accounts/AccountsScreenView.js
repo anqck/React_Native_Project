@@ -1,16 +1,14 @@
-import React from 'react';
 import T from 'prop-types';
+import React from 'react';
+import { FlatList, TouchableOpacity, View } from 'react-native';
+import { Avatar } from 'react-native-elements';
+import { ListItem } from 'react-native-material-ui';
 
-import { View, FlatList, TouchableOpacity } from 'react-native';
+import { Icon, Subtitle } from '../../components';
 import screens from '../../constants/screens';
-import {
-  Subtitle,
-  Icon,
-} from '../../components';
-import s from './styles';
 import colors from '../../styles/colors';
-import  { ListItem, Subheader } from 'react-native-material-ui'
-import { Avatar } from 'react-native-elements'
+import s from './styles';
+
 const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 
 const Accounts = ({

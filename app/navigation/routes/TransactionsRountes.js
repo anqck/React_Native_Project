@@ -1,9 +1,9 @@
 import screens from '../../constants/screens';
- import TransactionEditor from '../../screens/TransactionEditor.OverView';
- import TransactionDetail from '../../screens/TransactionDetail';
- import Calculator from '../../screens/Calculator';
-import Transactions from '../../screens/Transactions'
-import TransferDetail from '../../screens/TransferDetail'
+import Calculator from '../../screens/Calculator';
+import TransactionDetail from '../../screens/TransactionDetail';
+import TransactionEditor from '../../screens/TransactionEditor.OverView';
+import Transactions from '../../screens/Transactions';
+import TransferDetail from '../../screens/TransferDetail';
 import headerOptions from '../../utils/stackHeaderOptions';
 
 const TransactionsRoutes = {

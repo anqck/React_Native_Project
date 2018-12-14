@@ -1,12 +1,9 @@
-import {
-  compose,
-  withState,
-  hoistStatics,
-} from 'recompose';
 import { connect } from 'react-redux';
-import CategoriesScreenView from './CategoriesScreenView';
-import { transactionsOperations } from '../../modules/transactions';
+import { compose, hoistStatics, withState } from 'recompose';
+
 import { getExpenseCategory, getIncomeCategory } from '../../modules/categories/selectors';
+import { transactionsOperations } from '../../modules/transactions';
+import CategoriesScreenView from './CategoriesScreenView';
 
 const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 

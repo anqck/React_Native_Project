@@ -1,10 +1,11 @@
-import { compose, withHandlers, withState, lifecycle, hoistStatics } from 'recompose';
-import { connect } from 'react-redux';
 import R from 'ramda';
-import CalculatorScreenView from './CalculatorScreenView';
+import { DeviceEventEmitter } from 'react-native';
+import { connect } from 'react-redux';
+import { compose, hoistStatics, lifecycle, withHandlers, withState } from 'recompose';
+
 import screens from '../../constants/screens';
-import { withPickParams, withPaschal } from '../../utils/enhancers';
-import {DeviceEventEmitter} from 'react-native'
+import { withPaschal, withPickParams } from '../../utils/enhancers';
+import CalculatorScreenView from './CalculatorScreenView';
 
 const defaultExpr = '0';
 

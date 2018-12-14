@@ -1,15 +1,9 @@
-import React from 'react';
 import T from 'prop-types';
+import React from 'react';
 import { View } from 'react-native';
+
+import { DateFilter, FlatList, HeaderTitle, Separator, Subtitle, TransactionItem } from '../../components';
 import { SingletonAccountSwiper } from './components';
-import {
-  Subtitle,
-  Separator,
-  DateFilter,
-  TransactionItem,
-  HeaderTitle,
-  FlatList,
-} from '../../components';
 import s from './styles';
 
 const AccountDetails = ({

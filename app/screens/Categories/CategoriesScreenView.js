@@ -1,21 +1,13 @@
-import React from 'react';
 import T from 'prop-types';
-import ActionButton from 'react-native-action-button';
-import screens from '../../constants/screens';
+import React from 'react';
+import { TouchableOpacity } from 'react-native';
 
-import { View, FlatList, TouchableOpacity } from 'react-native';
-import {
-  ScreenWrapper,
-  Subtitle,
-  CategoriesList,
-  SegmentedControl,
-  TabContainer,
-  Icon,
-} from '../../components';
-import { getParam } from '../../utils/navHelpers';
+import { CategoriesList, Icon, ScreenWrapper, SegmentedControl, Subtitle, TabContainer } from '../../components';
 import { categoriesTypes as types } from '../../constants/categories';
-import s from './styles';
+import screens from '../../constants/screens';
 import { colors } from '../../styles';
+import { getParam } from '../../utils/navHelpers';
+import s from './styles';
 
 const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 

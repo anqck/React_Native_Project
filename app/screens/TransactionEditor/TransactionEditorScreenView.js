@@ -1,24 +1,25 @@
-import React from 'react';
-import { View, ScrollView } from 'react-native';
 import T from 'prop-types';
-import { getParam } from '../../utils/navHelpers';
-import { dimensions } from '../../styles';
-// import dateFormat from '../../constants/dateFormat';
-
+import React from 'react';
+import { ScrollView, View } from 'react-native';
 
 import {
-  Input,
   Button,
-  KeyboardAvoidingView,
-  DatePicker,
-  ScreenWrapper,
-  HeaderTitle,
-  Select,
-  FormInput,
   CategoriesList,
+  DatePicker,
+  FormInput,
+  HeaderTitle,
+  Input,
+  KeyboardAvoidingView,
+  ScreenWrapper,
+  Select,
   Value,
 } from '../../components';
+import { dimensions } from '../../styles';
+import { getParam } from '../../utils/navHelpers';
 import s from './styles';
+
+// import dateFormat from '../../constants/dateFormat';
+
 
 const AccountEditor = ({
   icon,

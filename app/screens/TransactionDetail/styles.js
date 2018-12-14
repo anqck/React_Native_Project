@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
-import { dimensions, colors, fontSizes, fontWeights } from '../../styles';
+
+import { colors, dimensions, fontSizes, fontWeights } from '../../styles';
 import { halfIndent } from '../../styles/dimensions';
 
 const { indent } = dimensions;

@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
-import { compose, hoistStatics, withProps, withHandlers } from 'recompose';
+import { compose, hoistStatics, withHandlers, withProps } from 'recompose';
+
 import screens from '../../constants/screens';
+import { getAccounts, getTotalBalance } from '../../modules/accounts/selectors';
 import { getParam } from '../../utils/navHelpers';
 import AccountsScreenView from './AccountsScreenView';
-import { getAccounts, getTotalBalance } from '../../modules/accounts/selectors';
 
 const mapStateToProps = state => ({
   accounts: getAccounts(state),

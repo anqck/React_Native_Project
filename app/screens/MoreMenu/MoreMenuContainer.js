@@ -1,11 +1,12 @@
-import { connect } from 'react-redux';
-import { compose, hoistStatics, withProps, withHandlers,withState } from 'recompose';
-import MoreMenuScreenView from './MoreMenuScreenView';
 import { Alert } from 'react-native';
-const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
-import { withLoading } from '../../utils/enhancers';
-import { settingsOperations } from '../../modules/settings';
+import { connect } from 'react-redux';
+import { compose, hoistStatics, withHandlers, withState } from 'recompose';
 
+import { settingsOperations } from '../../modules/settings';
+import { withLoading } from '../../utils/enhancers';
+import MoreMenuScreenView from './MoreMenuScreenView';
+
+const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 const mapStateToProps = state => ({
   currency: state.settings.currency,
 });

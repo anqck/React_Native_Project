@@ -1,19 +1,12 @@
-import React from 'react';
-import { View, Text } from 'react-native';
 import T from 'prop-types';
+import React from 'react';
+import { Text, View } from 'react-native';
 
-import {
-  ScreenWrapper,
-  HeaderTitle,
-  NavigationButton,
-  CategoryIcon,
-  Value,
-  Separator,
-} from '../../components';
-import s from './styles';
-import { getParam } from '../../utils/navHelpers';
-import { dimensions, colors } from '../../styles';
+import { CategoryIcon, HeaderTitle, NavigationButton, ScreenWrapper, Separator, Value } from '../../components';
+import { colors, dimensions } from '../../styles';
 import { dateWithTime } from '../../utils/dateHelpers';
+import { getParam } from '../../utils/navHelpers';
+import s from './styles';
 
 const TransactionDetail = ({
  account,

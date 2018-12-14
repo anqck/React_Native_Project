@@ -1,21 +1,22 @@
+import T from 'prop-types';
 import React from 'react';
 import { View } from 'react-native';
-import T from 'prop-types';
-import { getParam } from '../../utils/navHelpers';
-import DeleteButton from './DeleteButton';
+
 import {
-  Input,
+  BigRoundIconButton,
   Button,
-  Text,
-  KeyboardAvoidingView,
-  Select,
-  ScreenWrapper,
   HeaderTitle,
   IconsPickerModal,
-  BigRoundIconButton,
+  Input,
+  KeyboardAvoidingView,
+  ScreenWrapper,
+  Select,
+  Text,
 } from '../../components';
-import s from './styles';
 import { colors, dimensions } from '../../styles';
+import { getParam } from '../../utils/navHelpers';
+import DeleteButton from './DeleteButton';
+import s from './styles';
 
 
 const CategoryEditor = (props) => {

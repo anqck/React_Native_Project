@@ -1,13 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 import { withProps } from 'recompose';
-import {
-  Input,
-  Select,
-  Icon,
-} from '../../components';
-import s from './styles';
+
+import { Icon, Input, Select } from '../../components';
 import { dimensions } from '../../styles';
+import s from './styles';
 
 
 export const AccountSelect = withProps({

@@ -1,22 +1,12 @@
-import React from 'react';
 import T from 'prop-types';
-import { View, ScrollView, Text } from 'react-native';
-import {
-  VictoryGroup,
-  VictoryChart,
-  VictoryLabel,
-  VictoryBar,
-  VictoryAxis,
-} from 'victory-native';
-import {
-  Subtitle,
-  Separator,
-  SimpleDateFilter,
-  Value,
-} from '../../components';
-import s from './styles';
+import React from 'react';
+import { ScrollView, Text, View } from 'react-native';
+import { VictoryAxis, VictoryBar, VictoryChart, VictoryGroup, VictoryLabel } from 'victory-native';
+
+import { Separator, SimpleDateFilter, Subtitle, Value } from '../../components';
 import { colors, fontSizes } from '../../styles';
 import { formatMonthWithYear } from '../../utils/dateHelpers';
+import s from './styles';
 
 const chartHeight = 375;
 const getChartWidth = length => (length * 60 + 60 < 400 ? 330 : length * 60 + 60);

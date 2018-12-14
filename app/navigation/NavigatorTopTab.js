@@ -1,4 +1,4 @@
-import { TabNavigator,createBottomTabNavigator,createMaterialTopTabNavigator  } from 'react-navigation';
+import { createMaterialTopTabNavigator } from 'react-navigation';
 
 import CalculatorRoutes from './routes/CalculatorRoutes';
 

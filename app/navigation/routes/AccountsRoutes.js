@@ -1,9 +1,8 @@
 import screens from '../../constants/screens';
+import AccountDetails from '../../screens/AccountDetails';
+import AccountEditor from '../../screens/AccountEditor';
 import Accounts from '../../screens/Accounts';
-import AccountEditor from '../../screens/AccountEditor'
-import AccountDetails from '../../screens/AccountDetails'
-import TransferEditor from '../../screens/TransferEditor'
-
+import TransferEditor from '../../screens/TransferEditor';
 import headerOptions from '../../utils/stackHeaderOptions';
 
 const AccountsRoutes = {

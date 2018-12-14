@@ -1,19 +1,13 @@
-import {
-  withProps,
-  compose,
-  hoistStatics,
-  withHandlers,
-  withState,
-  withPropsOnChange,
-} from 'recompose';
-import { getParam } from '../../utils/navHelpers';
 import R from 'ramda';
 import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
-import TransactionEditorScreenView from './TransferEditorScreenView';
+import { compose, hoistStatics, withHandlers, withProps, withPropsOnChange, withState } from 'recompose';
+
 import { getAccounts, getTotalBalance } from '../../modules/accounts/selectors';
 import { transfersOperations } from '../../modules/transfers';
-import { withSetter, checkReadyForSubmit } from '../../utils/enhancersForm';
+import { checkReadyForSubmit, withSetter } from '../../utils/enhancersForm';
+import { getParam } from '../../utils/navHelpers';
+import TransactionEditorScreenView from './TransferEditorScreenView';
 
 const accountProp = (propName, def) => R.pathOr(def, ['account', propName]);
 

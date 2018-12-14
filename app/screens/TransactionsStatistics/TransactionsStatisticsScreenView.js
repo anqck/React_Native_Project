@@ -1,20 +1,13 @@
-import React from 'react';
 import T from 'prop-types';
-import { View, Text } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
 import { VictoryPie } from 'victory-native';
-import { PieLegend } from './components';
-import {
-  Subtitle,
-  Separator,
-  DateFilter,
-  TransactionItem,
-  FlatList,
-  SegmentedControl,
-  HeaderTitle,
-} from '../../components';
-import s from './styles';
+
+import { DateFilter, FlatList, HeaderTitle, SegmentedControl, Separator, Subtitle, TransactionItem } from '../../components';
 import { categoriesTypes as types } from '../../constants/categories';
 import colors from '../../styles/colors';
+import { PieLegend } from './components';
+import s from './styles';
 
 
 const tabs = [types.income, types.expense];

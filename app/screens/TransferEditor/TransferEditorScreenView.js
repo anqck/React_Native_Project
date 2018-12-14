@@ -1,20 +1,13 @@
-import React from 'react';
-import { View, ScrollView, Text } from 'react-native';
-import R from 'ramda';
-import T from 'prop-types';
 import moment from 'moment';
+import T from 'prop-types';
+import R from 'ramda';
+import React from 'react';
+import { ScrollView, Text, View } from 'react-native';
 
-import {
-  Button,
-  KeyboardAvoidingView,
-  DatePicker,
-  ScreenWrapper,
-  HeaderTitle,
-} from '../../components';
-import s from './styles';
+import { Button, DatePicker, HeaderTitle, KeyboardAvoidingView, ScreenWrapper } from '../../components';
 import { colors } from '../../styles';
-import dateFormat from '../../constants/dateFormat';
 import { AccountSelect, InputText, TwoArrowDown } from './components';
+import s from './styles';
 
 export const getBackgroundColor = account => (
   R.prop('color', account)

@@ -1,21 +1,10 @@
-import {
-  compose,
-  withState,
-  hoistStatics,
-  withProps,
-} from 'recompose';
 import { connect } from 'react-redux';
-import TransactionsStatisticsScreenView from './TransactionsStatisticsScreenView';
+import { compose, hoistStatics, withProps, withState } from 'recompose';
+
 import { transactionsOperations } from '../../modules/transactions';
-import {
-  getAccountsStats,
-  getCategoriesStats,
-} from '../../modules/transactions/selectors';
-import {
-  startOfDay,
-  formatDateForPie,
-} from '../../utils/dateHelpers';
-import R from 'ramda';
+import { getAccountsStats, getCategoriesStats } from '../../modules/transactions/selectors';
+import { formatDateForPie, startOfDay } from '../../utils/dateHelpers';
+import TransactionsStatisticsScreenView from './TransactionsStatisticsScreenView';
 
 const mapStateToProps = (state, props) => ({
   dataForChart: getAccountsStats(state, props),

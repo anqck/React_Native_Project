@@ -1,16 +1,11 @@
-import {
-  compose,
-  withState,
-  hoistStatics,
-  withHandlers,
-  withProps
-} from 'recompose';
 import moment from 'moment';
 import { connect } from 'react-redux';
-import TrendsScreenView from './TrendsScreenView';
+import { compose, hoistStatics, withHandlers, withState } from 'recompose';
+
 import { transactionsOperations } from '../../modules/transactions';
 import { getTrendsStats } from '../../modules/transactions/selectors';
 import { startOfCurrentMonth } from '../../utils/dateHelpers';
+import TrendsScreenView from './TrendsScreenView';
 
 const mapStateToProps = (state, props) => ({
   stats: getTrendsStats(state, props),

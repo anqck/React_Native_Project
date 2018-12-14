@@ -1,23 +1,17 @@
-import {
-  compose,
-  withHandlers,
-  withState,
-  hoistStatics,
-  withProps,
-  pure,
-} from 'recompose';
 import R from 'ramda';
-import { connect } from 'react-redux';
 import { Animated, Platform } from 'react-native';
-import TransactionsScreenView from './TransactionsScreenView';
-import { transactionsOperations } from '../../modules/transactions';
-import { transfersOperations } from '../../modules/transfers';
-import { getTransactions } from '../../modules/transactions/selectors';
-import { getTransfers } from '../../modules/transfers/selectors';
-import { getTotalBalance } from '../../modules/accounts/selectors';
-import { startOfDay } from '../../utils/dateHelpers';
+import { connect } from 'react-redux';
+import { compose, hoistStatics, pure, withHandlers, withProps, withState } from 'recompose';
+
 import screens from '../../constants/screens';
+import { getTotalBalance } from '../../modules/accounts/selectors';
+import { transactionsOperations } from '../../modules/transactions';
+import { getTransactions } from '../../modules/transactions/selectors';
+import { transfersOperations } from '../../modules/transfers';
+import { getTransfers } from '../../modules/transfers/selectors';
 import { dimensions } from '../../styles';
+import { startOfDay } from '../../utils/dateHelpers';
+import TransactionsScreenView from './TransactionsScreenView';
 
 
 const mapStateToProps = (state, props) => ({
