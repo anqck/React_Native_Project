@@ -65,7 +65,7 @@ const Transactions = ({
           concatenatedData.length > 5 && { transform: [{ translateY: headerTranslate }] },
         ]}
       >
-        {/* <Subtitle
+        <Subtitle
           style={s.subtitle}
           withoutPadding
           leftText="Accounts"
@@ -73,7 +73,7 @@ const Transactions = ({
         />
         <View style={{ paddingLeft: dimensions.halfIndent, paddingRight: dimensions.halfIndent }}>
           <AccountsSwiper navigation={navigation} />
-        </View> */}
+        </View>
         <Separator withOpacity />
         <DateFilter
           dateForFiltering={dateForFiltering}

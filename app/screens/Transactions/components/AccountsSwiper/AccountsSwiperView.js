@@ -3,7 +3,7 @@ import T from 'prop-types';
 import Swiper from 'react-native-swiper';
 import { View } from 'react-native';
 import s from './styles';
-import { AccountItem } from '../../../../components/index';
+import AccountItem from '../../../../components/AccountItem';
 
 
 const AccountsSwiper = ({ groupedAccounts, onAccountPress }) => {
