@@ -9,6 +9,7 @@ import {
 } from 'recompose';
 import Select from './Select';
 
+
 const enhance = compose(
   defaultProps({
     maxOptionsToDisplay: 4,
@@ -30,8 +31,10 @@ const enhance = compose(
 
   withHandlers({
     onSelect: props => (index, value) => {
+      console.log("OnSelect1");
       if (props.onSelect) props.onSelect(index, value);
-      if (!props.selectOption) props.selectItem(value);
+      //  if (!props.selectOption)
+        props.selectItem(value);
     },
     onSetOptionWidth: props => event =>
       props.setOptionWidth(
@@ -40,13 +43,16 @@ const enhance = compose(
     onDropped: props => () => props.setDropped(!props.isDropped),
   }),
   withPropsOnChange(['selectOption'], ({
-    selectOption, options, selectItem,
+    onSelect,selectOption, options, selectItem,
   }) => {
     
     if (selectOption) {
+      
       console.log("SelectOption");
       const index = options.findIndex(el => el.id === selectOption.id);
       selectItem(options[index]);
+      onSelect(index,options[index] );
+     
     }
   }),
   lifecycle({

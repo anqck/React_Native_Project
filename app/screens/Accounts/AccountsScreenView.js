@@ -42,9 +42,10 @@ const Accounts = ({
 
                         }}
                         onPress={() =>  onPress(item)}
-                        onRightElementPress={() => {
-                            console.log("Chuyển khoản");
-                            onTranferPress(item);
+                        onRightElementPress={(menu) => {
+                          menu.index === 0 ?
+                        
+                            onTranferPress(item):undefined;
                         }}
                     />
   );
