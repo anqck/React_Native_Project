@@ -34,10 +34,10 @@ const DateFilter = ({
   <View style={s.selectors}>
     <Select
       selectorsWidth={scalingUtils.moderateScale(105)}
-      options={['Week', 'Month', 'Year']}
+      options={['Tuần', 'Tháng', 'Năm']}
       style={s.dateSelector}
       isShowScroll={false}
-      defaultValue="Select"
+      defaultValue="Chọn"
       onSelect={onChangeSelector}
       isActiveSelector={isActiveSelector}
     />
