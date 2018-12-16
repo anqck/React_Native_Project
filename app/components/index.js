@@ -32,7 +32,9 @@ import EmptyList from './EmptyList'
 import DateFilter from './DateFilter'
 import Calendar from './Calendar'
 import DatePicker from './DatePicker'
+import FlatList from './FlatList'
 export {
+  FlatList,
   DatePicker,
   Calendar,
   DateFilter,
