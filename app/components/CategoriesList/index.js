@@ -2,7 +2,8 @@ import React from 'react';
 import T from 'prop-types';
 import { View, FlatList, TouchableOpacity } from 'react-native';
 import Modal from 'react-native-modal';
-import { Text, Separator } from '../index';
+import Text from '../Text';
+import Separator  from '../Separator';
 import { CategoryItem } from './components';
 import s from './styles';
 
@@ -39,7 +40,7 @@ const CategoriesList = ({
       >
         <View style={s.container}>
           <View>
-            <Text style={s.headerText}>Choose category</Text>
+            <Text style={s.headerText}>Chọn danh mục</Text>
             <Separator />
           </View>
           <FlatList

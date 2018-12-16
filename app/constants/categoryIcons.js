@@ -6,7 +6,7 @@ export default [
   'car',
   'phone',
   'silverware',
-  'martini',
+
   'food',
   'gift',
   'heart-pulse',
