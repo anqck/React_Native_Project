@@ -23,7 +23,7 @@ const AccauntsSwiper = ({ onIndexChanged, accounts, initialId }) => (
               key={acc.id}
               style={[s.accountContainer, { backgroundColor: acc.color }]}
             >
-              <Text style={s.balanceText}>${acc.balance}</Text>
+              <Text style={s.balanceText}>{acc.balance.toString().replace(/(.)(?=(\d{3})+$)/g,'$1,')} ₫</Text>
               <View style={s.accountNameContainer}>
                 <Text style={s.accountNameText}>{acc.name}</Text>
               </View>
