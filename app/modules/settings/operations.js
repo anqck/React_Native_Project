@@ -1,5 +1,4 @@
 import {
-  changeCurrency,
   signIn,
   generateMockData,
   resetData,
@@ -17,7 +16,7 @@ const generateData = () => (dispatch) => {
 };
 
 export default {
-  changeCurrency,
+
   signIn,
   checkSettings,
   generateData,
