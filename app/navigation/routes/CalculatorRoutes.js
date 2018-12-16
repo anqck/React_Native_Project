@@ -10,7 +10,7 @@ const ExpenseRoutes = {
         header: null,
     })},
     AddExpense: { screen: Dummmy ,navigationOptions: () => ({
-        tabBarLabel: 'Expense',
+        tabBarLabel: 'CHI',
         tabBarVisible: false,
       
     })},
@@ -22,7 +22,7 @@ const ExpenseRoutes = {
         header: null,
     })},
     AddIncome: { screen: Dummmy ,navigationOptions: () => ({
-        tabBarLabel: 'Income',
+        tabBarLabel: 'THU',
         tabBarVisible: false,
       
     })},
@@ -72,14 +72,14 @@ const CalculatorRoutes = {
     IncomeCalculator: {
         screen: IncomeNav,
         navigationOptions: () => ({
-            tabBarLabel: 'Income',
+            tabBarLabel: 'THU',
             
         })
     },
     ExpenseCalculator: {
         screen: ExpenseNav,
         navigationOptions: () => ({
-            tabBarLabel: 'Expense',
+            tabBarLabel: 'CHI',
         })
     },
 
