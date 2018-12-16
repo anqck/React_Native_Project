@@ -28,6 +28,8 @@ const Transactions = ({
   onDelete,
   onGoToDetail,
   dateForFiltering,
+  onAddToFavourite,
+  onDeleteFromFavourites,
   setDateForFiltering,
   setListRef,
   scrollY,
@@ -43,7 +45,8 @@ const Transactions = ({
         id={item.id}
         entity={item}
         onDelete={() => onDelete(param)}
-
+        onAddToFavourite={() => onAddToFavourite(param)}
+        onDeleteFromFavourites={() => onDeleteFromFavourites(param)}
         isFavourite={item.isFavourite}
         onPress={() => onGoToDetail(param)}
         onAllowScroll={onAllowScroll}

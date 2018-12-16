@@ -24,7 +24,7 @@ export const getMonths = (from, to, months) => from.getTime() <= to.getTime()
   : months;
 
 export const dateWithDots = d => moment(d).format('DD.MM.YYYY');
-export const dateWithTime = d => moment(d).format('HH:MM | DD.MM.YYYY');
+export const dateWithTime = d => moment(d).format('HH:mm | DD.MM.YYYY');
 
 
 export const startOfDay = moment().startOf('day');
