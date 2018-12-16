@@ -13,6 +13,8 @@ import Bookmarks from '../../screens/Bookmarks';
 import AccountsNavigator from '../navigators/AccountsNavigator';
 import Calculator from '../../screens/Calculator';
 import CalculatorNav from '../NavigatorTopTab';
+import Categories from '../../screens/Categories';
+
 
 const Routes = {
         Bookmarks: {
@@ -74,7 +76,7 @@ const Routes = {
             })
         },
         Profile: {
-            screen: Bookmarks,
+            screen: Categories,
             navigationOptions: () => ({
                 tabBarIcon: ({tintColor}) => (
                     <Icon

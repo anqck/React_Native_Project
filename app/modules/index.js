@@ -6,6 +6,7 @@ import settings from './settings';
 import accounts from './accounts';
 import categories from './categories';
 
+
 const config = {
   key: 'root',
   whitelist: [
@@ -19,6 +20,7 @@ const config = {
 };
 
 const appReducer = {
+
   categories,
   accounts,
   app,
