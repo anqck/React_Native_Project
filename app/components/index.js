@@ -29,7 +29,11 @@ import IconsPickerModal from './IconsPickerModal'
 import BigRoundIconButton from './BigRoundIconButton'
 import TransactionItem from './TransactionItem'
 import EmptyList from './EmptyList'
+import DateFilter from './DateFilter'
+import Calendar from './Calendar'
 export {
+  Calendar,
+  DateFilter,
   EmptyList,
   TransactionItem,
   iconsList,

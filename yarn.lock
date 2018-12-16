@@ -6154,6 +6154,14 @@ react-native-branch@2.2.5:
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
   integrity sha1-QHTdY7SXPmOX2c5Q6XtXx3pRjp0=
 
+react-native-calendar-picker@^5.22.0:
+  version "5.22.0"
+  resolved "https://registry.yarnpkg.com/react-native-calendar-picker/-/react-native-calendar-picker-5.22.0.tgz#03e2bec556d80a3cd83ba7db704bca8e9e81dc69"
+  integrity sha512-29MHvRfzhDuG/JGdPF6kCQrWSMF8omX7pmzQqu9zE4AyKmm9Aqif3D1lYrqXi03EHLc/gmsa8/Hzom+mhIH7oQ==
+  dependencies:
+    prop-types "^15.6.0"
+    uuid "3.2.1"
+
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-dismiss-keyboard/-/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"

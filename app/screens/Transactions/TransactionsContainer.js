@@ -47,11 +47,11 @@ const enhance = compose(
       ? props.addTransactionToFavourites(id)
       : props.addTransferToFavourites(id);
     },
-    onDeleteFromFavourites: props => ({ isTransaction, id }) => {
-      isTransaction
-        ? props.onDeleteFromFavourites(id)
-        : props.onDeleteTransferFromFavourites(id);
-    },
+    // onDeleteFromFavourites: props => ({ isTransaction, id }) => {
+    //   isTransaction
+    //     ? props.onDeleteFromFavourites(id)
+    //     : props.onDeleteTransferFromFavourites(id);
+    // },
     onDelete: props => ({ isTransaction, id }) => {
       isTransaction
         ? props.deleteTransaction(id)
