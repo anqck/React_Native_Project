@@ -46,12 +46,12 @@ const CategoryEditor = (props) => {
                 tintColor={colors.greyDarker}
                 size={dimensions.bigIconSize}
               />
-              <Text style={s.label}>Choose Icon</Text>
+              <Text style={s.label}>Chọn biểu tượng</Text>
             </View>
 
             <Input
               isValid
-              placeholder="Category name"
+              placeholder="Tên danh mục"
               value={name}
               onChangeText={setName}
               containerStyle={s.root}
@@ -60,10 +60,10 @@ const CategoryEditor = (props) => {
 
           {!getParam('category')(navigation) &&
             <Select
-              options={['Expense', 'Income']}
+              options={['Chi', 'Thu']}
               containerStyle={s.selectorContainer}
               style={s.selector}
-              defaultValue="Choose transaction type"
+              defaultValue="Chọn kiểu"
               selectorsWidth={dimensions.containerWidth}
               onSelect={onSelectCategory}
               textStyle={s.selectTextStyle}
@@ -86,7 +86,7 @@ const CategoryEditor = (props) => {
         <Button
           borderless
           secondaryOpacity
-          title="Save"
+          title="Lưu"
           onPress={onSubmit}
         />
         }
@@ -98,7 +98,7 @@ const CategoryEditor = (props) => {
 
 CategoryEditor.navigationOptions = ({ navigation }) => ({
   headerTitle:
-  <HeaderTitle title={getParam('category')(navigation) ? 'Edit Category' : 'New Category'} />,
+  <HeaderTitle title={getParam('category')(navigation) ? 'Sửa hạng mục thu/chi' : 'Thêm hạng mục thu/chi'} />,
   headerRight: <DeleteButton navigation={navigation} />,
 });
 

@@ -24,7 +24,13 @@ import CategoryIcon from './CategoryIcon'
 import Separator from './Separator'
 import RoundIcon from './RoundIcon'
 import Select from './Select'
+import iconsList from './iconsList'
+import IconsPickerModal from './IconsPickerModal'
+import BigRoundIconButton from './BigRoundIconButton'
 export {
+  iconsList,
+  IconsPickerModal,
+  BigRoundIconButton,
   Select,
   RoundIcon,
   Separator,

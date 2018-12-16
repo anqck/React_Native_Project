@@ -82,7 +82,7 @@ const Categories = ({
 Categories.navigationOptions = ({ navigation }) => ({
   headerRight: (
     <TouchableOpacity
-      onPress={onNavigate(navigation, screens.AccountEditor, { title: 'Thêm tài khoản' })}
+      onPress={goAddCategory(navigation)}
     >
       <Icon
         name="plus"
