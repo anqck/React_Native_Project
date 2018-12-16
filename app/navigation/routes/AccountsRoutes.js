@@ -3,6 +3,7 @@ import Accounts from '../../screens/Accounts';
 import AccountEditor from '../../screens/AccountEditor'
 import AccountDetails from '../../screens/AccountDetails'
 import TransferEditor from '../../screens/TransferEditor'
+
 import headerOptions from '../../utils/stackHeaderOptions';
 
 const AccountsRoutes = {
@@ -19,6 +20,7 @@ const AccountsRoutes = {
   [screens.TransferEditor]: {
     screen: TransferEditor,
   },
+ 
 };
 
 export default AccountsRoutes;
