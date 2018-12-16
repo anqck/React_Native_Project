@@ -28,10 +28,12 @@ const enhance = compose(
     onSelectAccount: getParam('onSelectAccount')(props.navigation) ||   goEditAccount(props.navigation),
     onAddAccount: onNavigate(props.navigation, screens.AccountEditor, { title: 'Tạo tài khoản' }),
     onTranfer: getParam('onSelectAccount')(props.navigation) ||   goTranferAccount(props.navigation),
+    
   })),
   withHandlers({
     onPress: props => item => props.onSelectAccount(item),
     onTranferPress: props => item => props.onTranfer(item),
+    onAccountPress: props => item =>  {props.navigation.navigate(screens.AccountDetail, { accountId: item.id });},
   }),
 );
 
