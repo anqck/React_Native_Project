@@ -46,9 +46,9 @@ const createAccount = (props) => {
 //      },
 
 const defaultAccounts = [
-  createAccount({ name: 'Other', color: chartPalette.yellow500 }),
-  createAccount({ name: 'Cash', color: chartPalette.purple500 }),
-  createAccount({ name: 'Credit card', color: chartPalette.lightBlue500 }),
+  createAccount({ name: 'Khác', color: chartPalette.yellow500 }),
+  createAccount({ name: 'Tiền mặt', color: chartPalette.purple500 }),
+  createAccount({ name: 'Thẻ tín dụng', color: chartPalette.lightBlue500 }),
 ];
 
 const initialState = insertAll({}, defaultAccounts);
