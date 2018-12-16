@@ -8,7 +8,25 @@ import TouchableItem from './TouchableItem';
 import Value from './Value';
 import VerticalSeparator from './VerticalSeparator';
 import Input from './Input';
+import PropsProxyHOC from './PropsProxyHOC'
+import Logo from './Logo'
+import Icon from './Icon'
+import DrawerIcon from './DrawerIcon'
+import Subtitle from './Subtitle'
+import KeyboardAvoidingView from './KeyboardAvoidingView'
+import ScreenWrapper from './ScreenWrapper'
+import ColorPicker from './ColorPicker'
+import NavigationButton from './NavigationButton'
 export {
+  NavigationButton,
+  ColorPicker,
+  ScreenWrapper,
+  KeyboardAvoidingView,
+  Subtitle,
+  Logo,
+  Icon,
+  DrawerIcon,
+  PropsProxyHOC,
   AccountItem,
   Button,
   FormInput,
