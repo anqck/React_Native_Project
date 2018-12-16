@@ -3,6 +3,8 @@ export default {
   TransactionsRoot: 'TransactionsRoot',
   Transactions: 'Transactions',
   TransactionsStatistics: 'TransactionsStatistics',
+  AddExpense: 'AddExpense',
+  AddIncome: 'AddIncome',
 
   TransactionEditorRoot: 'TransactionEditorRoot',
   TransactionEditor: 'Bookmarks',

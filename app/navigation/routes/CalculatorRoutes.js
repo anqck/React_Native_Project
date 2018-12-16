@@ -1,15 +1,16 @@
 import Calculator from '../../screens/Calculator';
 import React, { Component } from 'react';
 import { createStackNavigator,createBottomTabNavigator,createMaterialTopTabNavigator  } from 'react-navigation';
-import Dummmy from '../../screens/Bookmarks'
-
+import TransactionEditor from '../../screens/TransactionEditor'
+import screens from '../../constants/screens';
+import Bookmarks from '../../screens/Bookmarks'
 
 const ExpenseRoutes = {
     ExpenseCalculator: { screen: Calculator ,navigationOptions: () => ({
 
         header: null,
     })},
-    AddExpense: { screen: Dummmy ,navigationOptions: () => ({
+    'AddExpense': { screen: TransactionEditor ,navigationOptions: () => ({
         tabBarLabel: 'CHI',
         tabBarVisible: false,
       
@@ -21,7 +22,7 @@ const ExpenseRoutes = {
 
         header: null,
     })},
-    AddIncome: { screen: Dummmy ,navigationOptions: () => ({
+    'AddIncome': { screen: TransactionEditor ,navigationOptions: () => ({
         tabBarLabel: 'THU',
         tabBarVisible: false,
       

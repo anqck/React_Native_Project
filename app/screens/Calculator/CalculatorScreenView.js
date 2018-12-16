@@ -10,7 +10,7 @@ import { getParam } from '../../utils/navHelpers';
 
 const Button2 = onPress => token => <CalcButton key={token} token={token} onPress={onPress} />;
 
-const ButtonsGroup = (onPress, style) => ({ tokens }) => ( // eslint-disable-line
+const ButtonsGroup = (onPress, style) => ({ tokens }) => ( 
   <View style={[s.keyboardRowStyle, style]}>
     {R.map(Button2(onPress), tokens)}
   </View>

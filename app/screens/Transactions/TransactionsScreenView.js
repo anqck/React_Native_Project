@@ -38,7 +38,7 @@ const Transactions = ({
   const _renderItem = ({ item }) => {
     const param = { id: item.id, isTransaction: !!item.account };
     return (
-      console.log(item),
+      // console.log(item),
       <TransactionItem
         id={item.id}
         entity={item}
@@ -132,12 +132,6 @@ Transactions.propTypes = {
   onAllowScroll: T.func,
 };
 
-Transactions.navigationOptions = ({ navigation }) => ({
-  headerRight: <NavigationButton
-    iconName="pie-chart"
-    tintColor={colors.green}
-    onPress={() => navigation.navigate(screens.TransactionsStatistics)}
-  />,
-});
+
 
 export default Transactions;

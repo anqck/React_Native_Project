@@ -42,16 +42,7 @@ const enhance = compose(
     new Animated.Value(Platform.OS === 'ios' ? -dimensions.headerMaxHeight : 0)),
 
   withHandlers({
-    onAddToFavourite: props => ({ isTransaction, id }) => {
-      isTransaction
-      ? props.addTransactionToFavourites(id)
-      : props.addTransferToFavourites(id);
-    },
-    // onDeleteFromFavourites: props => ({ isTransaction, id }) => {
-    //   isTransaction
-    //     ? props.onDeleteFromFavourites(id)
-    //     : props.onDeleteTransferFromFavourites(id);
-    // },
+
     onDelete: props => ({ isTransaction, id }) => {
       isTransaction
         ? props.deleteTransaction(id)
