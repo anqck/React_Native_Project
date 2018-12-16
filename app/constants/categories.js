@@ -20,7 +20,7 @@ const expenseCategories = [
   { name: 'Gửi xe', icon: 'car' },
   { name: 'Điện thoại', icon: 'phone' },
   { name: 'Ăn ngoài', icon: 'silverware' },
-  { name: 'Giải trí', icon: 'martini' },
+  { name: 'Giải trí', icon: 'accusoft' },
   { name: 'Thực phẩm', icon: 'food' },
   { name: 'Quà', icon: 'gift' },
   { name: 'Sức khỏe', icon: 'heart-pulse' },

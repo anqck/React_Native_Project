@@ -4,7 +4,7 @@ import AccountEditor from '../../screens/AccountEditor'
 
 import headerOptions from '../../utils/stackHeaderOptions';
 
-const Routes = {
+const AccountsRoutes = {
   [screens.Accounts]: {
     screen: Accounts,
     navigationOptions: headerOptions(),
@@ -14,4 +14,4 @@ const Routes = {
   },
 };
 
-export default Routes;
+export default AccountsRoutes;
