@@ -6,6 +6,8 @@ import settings from './settings';
 import accounts from './accounts';
 import categories from './categories';
 import transactions from './transactions';
+import transfers from './transfers';
+
 
 const config = {
   key: 'root',
@@ -26,6 +28,7 @@ const appReducer = {
   app,
   navigator,
   settings,
+  transfers,
 };
 
 

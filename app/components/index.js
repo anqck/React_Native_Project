@@ -27,7 +27,11 @@ import Select from './Select'
 import iconsList from './iconsList'
 import IconsPickerModal from './IconsPickerModal'
 import BigRoundIconButton from './BigRoundIconButton'
+import TransactionItem from './TransactionItem'
+import EmptyList from './EmptyList'
 export {
+  EmptyList,
+  TransactionItem,
   iconsList,
   IconsPickerModal,
   BigRoundIconButton,

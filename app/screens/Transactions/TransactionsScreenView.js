@@ -8,7 +8,6 @@ import {
   Subtitle,
   Separator,
   DateFilter,
-  AddTransactionButton,
   TransactionItem,
   EmptyList,
 } from '../../components';
@@ -114,7 +113,7 @@ const Transactions = ({
           concatenatedData.length ? <View style={s.paddingBottom}><Separator /></View> : null
         }
       />
-      <AddTransactionButton navigation={navigation} isShowTip />
+
     </View>
   );
 };
