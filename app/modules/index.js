@@ -4,6 +4,7 @@ import app from './app';
 import navigator from './navigator';
 import settings from './settings';
 import accounts from './accounts';
+import categories from './categories';
 
 const config = {
   key: 'root',
@@ -18,6 +19,7 @@ const config = {
 };
 
 const appReducer = {
+  categories,
   accounts,
   app,
   navigator,
