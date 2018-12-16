@@ -11,7 +11,7 @@ const enhance = compose(
 
     return {
       category,
-      title: 'Delete',
+      title: 'Xóa',
       backOnSuccess: true,
       isVisible: !!category,
       onPress: () => deleteCategory(category.id),
