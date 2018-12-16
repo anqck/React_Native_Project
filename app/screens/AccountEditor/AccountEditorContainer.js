@@ -44,7 +44,7 @@ const onSubmit = ({
   const editedProps =
     R.pick(['name', 'currency', 'date', 'initialBalance', 'balance', 'color'], props);
   const propsToSubmit = account ? { id: account.id, ...editedProps } : editedProps;
-  console.log(propsToSubmit);
+ // console.log(propsToSubmit);
   submit(propsToSubmit);
   navigation.dispatch(NavigationActions.back());
 };

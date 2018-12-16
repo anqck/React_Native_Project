@@ -53,6 +53,7 @@ const enhance = compose(
 
   withHandlers({
     onSubmit: ({ createTransfer, navigation, ...props }) => () => {
+      console.log(fields);
       createTransfer({
         ...R.pick(fields, props),
         from: R.prop('id', props.from),

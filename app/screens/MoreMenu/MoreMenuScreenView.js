@@ -43,7 +43,7 @@ const Accounts = ({
                     />
   );
 
-  console.log(accounts);
+
   
   return (
     <View style={s.root}>
