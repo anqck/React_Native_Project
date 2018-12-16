@@ -80,6 +80,7 @@ const renderSeparator = () => null;
 
 const Select = (props) => {
   const {
+    defaultIdx,
     isAccount,
     isDropped,
     maxOptionsToDisplay,
@@ -107,10 +108,13 @@ const Select = (props) => {
     disabled = false,
   } = props;
 
+  
   return (
+   
     <View style={containerStyle}>
       {!!label && <Text style={[s.label, labelStyle]}>{label}</Text>}
       <ModalDropdown
+
         disabled={disabled}
         dropdownStyle={[
           s.select,
@@ -121,6 +125,7 @@ const Select = (props) => {
             width: selectorsWidth,
           },
         ]}
+        defaultIndex={1}
         onDropdownWillHide={onDropped}
         onDropdownWillShow={onDropped}
         onLayout={onSetOptionWidth}
@@ -161,6 +166,7 @@ const Select = (props) => {
         />
       </ModalDropdown>
     </View>
+    
   );
 };
 

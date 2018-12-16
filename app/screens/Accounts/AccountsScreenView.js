@@ -14,7 +14,7 @@ import { Avatar } from 'react-native-elements'
 const onNavigate = (nav, screen, params) => () => nav.navigate(screen, params);
 
 const Accounts = ({
-  accounts, onPress, onAddAccount, totalBalance,onTranfer,onTranferPress
+  accounts, onPress, onAddAccount, totalBalance,onTranfer,onTranferPress,onAccountPress
 }) => {
   const _keyExtractor = item => item.id;
 
@@ -35,16 +35,19 @@ const Accounts = ({
                         rightElement={{
                           menu: {
                             icon: "more-vert",
-                            labels: ["Chuyển khoản"]
+                            labels: ["Chuyển khoản","Sửa tài khoản"]
                         }
                       }}
                         onLeftElementPress={() => {
 
                         }}
-                        onPress={() =>  onPress(item)}
-                        onRightElementPress={() => {
-                            console.log("Chuyển khoản");
+                        onPress={() =>  onAccountPress(item)}
+                        onRightElementPress={(menu) => {
+                          if(menu.index === 0)                                              
                             onTranferPress(item);
+                          else if (menu.index === 1)
+                          onPress(item);
+
                         }}
                     />
   );
