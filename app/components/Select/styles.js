@@ -41,7 +41,7 @@ export default StyleSheet.create({
     color: colors.black,
   },
   selectedOption: {
-    backgroundColor: colors.green,
+    backgroundColor: colors.MainBlue,
   },
   selectedOptionText: {
     color: colors.white,
@@ -63,6 +63,6 @@ export default StyleSheet.create({
     borderColor: colors.grey,
   },
   selectedSecondInputContainer: {
-    borderColor: colors.green,
+    borderColor: colors.MainBlue,
   },
 });

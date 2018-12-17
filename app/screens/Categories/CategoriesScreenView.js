@@ -86,7 +86,7 @@ Categories.navigationOptions = ({ navigation }) => ({
     >
       <Icon
         name="plus"
-        color={colors.green}
+        color={colors.MainBlue}
         width={60}
         height={24}
       />

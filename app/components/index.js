@@ -33,7 +33,9 @@ import DateFilter from './DateFilter'
 import Calendar from './Calendar'
 import DatePicker from './DatePicker'
 import FlatList from './FlatList'
+import SimpleDateFilter from './SimpleDateFilter'
 export {
+  SimpleDateFilter,
   FlatList,
   DatePicker,
   Calendar,

@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
   accountContainer: {
     flex: 1,
-    backgroundColor: colors.green,
+    backgroundColor: colors.MainBlue,
     alignItems: 'center',
     justifyContent: 'center',
     margin: dimensions.indent,
