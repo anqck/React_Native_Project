@@ -50,7 +50,7 @@ const AccountDetails = ({
       <Subtitle
         style={s.subtitle}
         withLittlePadding
-        leftText="Transaction"
+        leftText="Lịch sử"
         date={dateForFiltering}
       />
       <Separator withShadow />
