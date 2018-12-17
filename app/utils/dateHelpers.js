@@ -30,7 +30,7 @@ export const dateWithTime = d => moment(d).format('HH:mm | DD.MM.YYYY');
 export const startOfDay = moment().startOf('day');
 export const startOfYesterday = moment().subtract(1, 'days').startOf('day');
 export const startOfYear = moment().subtract(11, 'months').startOf('month');
-export const startOfCurrentWeek = moment().startOf('week');
+export const startOfCurrentWeek = moment().startOf('isoWeek');
 export const startOfCurrentMonth = moment().startOf('month');
 export const startOfCurrentYear = moment().startOf('year');
 export const startOfHalfYearAgo = moment().subtract(5, 'months').startOf('month');

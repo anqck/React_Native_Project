@@ -63,6 +63,6 @@ export default StyleSheet.create({
     borderColor: colors.grey,
   },
   selectedSecondInputContainer: {
-    borderColor: colors.green,
+    borderColor: colors.MainBlue,
   },
 });

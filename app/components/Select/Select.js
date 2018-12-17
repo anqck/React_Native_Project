@@ -154,7 +154,7 @@ const Select = (props) => {
           iconRight={{
             name: isDropped ? 'chevron-up' : 'chevron-down',
             size: dimensions.iconSize - 4,
-            color: isSelected && changeStyleIsSelected ? colors.green : colors.grey,
+            color: isSelected && changeStyleIsSelected ? colors.MainBlue : colors.grey,
           }}
           rightIconStyle={s.rightIconStyle}
           leftIconStyle={s.leftIconStyle}
