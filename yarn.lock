@@ -6287,6 +6287,11 @@ react-native-elements@^0.19.1:
     opencollective "^1.0.3"
     prop-types "^15.5.8"
 
+react-native-extra-dimensions-android@^0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/react-native-extra-dimensions-android/-/react-native-extra-dimensions-android-0.22.0.tgz#4b09ba19f52c5181efe37965a2c34cadfa05fb61"
+  integrity sha512-92ppYjXLId5dgjji7glG96CLkGWF/uH96w/hdoM1Je6cFPMqXbVLadHNCH/Edk2i1AySY7qObZXYJD7buWnhlg==
+
 react-native-gesture-handler@1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.9.tgz#ddec4d19d51cb6fb54df6eca792ebd76aaef083f"

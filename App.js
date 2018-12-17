@@ -10,6 +10,8 @@ import { store, persistor } from './app/store';
 import { appOperations } from './app/modules/app';
 import { lifecycle } from 'recompose';
 
+console.ignoredYellowBox = ['MenuContext', 'Deprecation warning'];
+
 const App = () => (
 <MenuProvider>
         <View style={styles.rootStyle}>
