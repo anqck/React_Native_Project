@@ -16,6 +16,8 @@ const getAccountId = (_, props) => R.pathOr('0', ['accountId'], props);
 export const getTransactions = createSelector(
   [getTransactionsIds, getTransactionsEntities, getDateForFiltering],
   (transIds, transEnt, date) => {
+    console.log(transIds);
+    console.log(transEnt);
     const newArray = [];
     transIds.forEach((id) => {
       const transaction = transEnt[id];

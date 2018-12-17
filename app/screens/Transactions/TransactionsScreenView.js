@@ -29,10 +29,11 @@ const Transactions = ({
   onAllowScroll,
   isScrollEnabled,
 }) => {
-
+  
   const _renderItem = ({ item }) => {
     const param = { id: item.id, isTransaction: !!item.account };
     return (
+      console.log(item),
       // console.log(item),
       <TransactionItem
         id={item.id}
