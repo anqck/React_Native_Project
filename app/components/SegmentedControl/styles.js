@@ -16,14 +16,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     backgroundColor: colors.white,
-    borderColor: colors.green,
+    borderColor: colors.blue,
   },
   activeTabStyle: {
-    backgroundColor: colors.green,
-    borderColor: colors.green,
+    backgroundColor: colors.MainBlue,
+    borderColor: colors.blue,
   },
   tabTextStyle: {
-    color: colors.green,
+    color: colors.MainBlue,
     fontSize: fontSizes.medium,
   },
   activeTabTextStyle: {
