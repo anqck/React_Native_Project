@@ -71,12 +71,16 @@ export const getAccountsStats = createSelector(
         };
       }
     });
+    // console.log(data);
     const res = [];
+    const color  = [];
     R.forEachObjIndexed(
       (value, key) => {
         res.push({ x: key, y: Math.abs(value.value), fill: value.color, name: value.accName });
+        color.push( value.color);
       }, data
     );
+
     // [{ x: 1, y: 1, fill: "#c43a31" }]
     return res;
   },

@@ -8,8 +8,7 @@ import {
     Entypo,
     Ionicons,
   } from '@expo/vector-icons';
-
-import Bookmarks from '../../screens/Bookmarks';
+import TransactionsStatistics from '../../screens/TransactionsStatistics';
 import AccountsNavigator from '../navigators/AccountsNavigator';
 import Trends from '../../screens/Trends';
 import CalculatorNav from '../NavigatorTopTab';
@@ -65,7 +64,7 @@ const Routes = {
         //     })
         // },
         Private: {
-            screen: Trends,
+            screen: TransactionsStatistics,
             navigationOptions: () => ({
                 
                 tabBarIcon: ({tintColor}) => (
