@@ -38,17 +38,20 @@ const Trends = ({
 
         <ScrollView
           horizontal
+
           ref={setListRef}
           bounces={false}
           showsHorizontalScrollIndicator={stats.tickValues.length > 1}
         >
           <VictoryChart
+
             height={chartHeight}
             padding={{ top: 25, bottom: 50, left: 50 }}
             width={getChartWidth(stats.tickValues.length)}
             domainPadding={{ x: [50, 50] }}
           >
             <VictoryAxis
+            
               height={chartHeight}
               dependentAxis
               domain={[1, stats.maxValue]}
@@ -122,13 +125,13 @@ const Trends = ({
             padding={{ top: 24, left: 50, bottom: 51.3 }}
             dependentAxis
             domain={[1, stats.maxValue]}
-            width={50}
+            width={60}
             style={{
               grid: { stroke: colors.grey, strokeWidth: 0.5 },
               axis: { stroke: colors.greyVeryDarker, strokeWidth: 2 },
               tickLabels: {
-                fontSize: fontSizes.verySmall,
-                padding: 6,
+                fontSize: fontSizes.verySmall - 3,
+                padding: 2,
                 stroke: colors.grey,
                 fill: colors.greyVeryDarker,
                 strokeWidth: 0.5,

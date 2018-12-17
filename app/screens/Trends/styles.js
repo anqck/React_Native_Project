@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   chartContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+   
     marginBottom: dimensions.indent,
   },
   container: {
@@ -48,6 +49,7 @@ const styles = StyleSheet.create({
     width: 50,
     opacity: 0.9,
     backgroundColor: colors.white,
+   
   },
 });
 
