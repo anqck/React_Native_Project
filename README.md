@@ -4,12 +4,12 @@ This is a simple cross-platform mobile app that uses React Native framework. Thi
 # Functionality
 | Functionality| Example images|
 |---|---|
-|**Dashboard**: Displays overview of all accounts and transaction histories.|![](https://github.com/anqck/React_Native_Project/blob/ReadmeUpdate/readme/Overviews.gif)|
-|**Accounts management**: Manages all account ( wallet, ATM, ect.) information. Can add, remove, edit orview all transactions of each account.|Add new account: ![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/AddAccount.gif)Remove account:![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/RemoveAccount.gif)|
-|**Account transactions management**: Manages all expense/income transaction and of each account. You can also transfer the balance from one accounts to another one.|Add new transaction:![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/AddTransition.gif)Remove transaction:![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/RemoveTransaction.gif)Edit transaction:![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/EditTrans.gif)|
-|**Favorites list**: Provides list of favorites transaction that added by the user.|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Fav.gif)|
-|**Transactions statistics**: Display the statistics of the transactions by period or by category with graph.|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/EditTrans.gif)|
-|**Reset all data to default**: Reset all the data in the application to default.|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/ResetData.gif)|
+|**Dashboard**: Displays overview of all accounts and transaction histories.|![](https://github.com/anqck/React_Native_Project/blob/master/readme/Overviews.gif)|
+|**Accounts management**: Manages all account ( wallet, ATM, ect.) information. Can add, remove, edit orview all transactions of each account.|Add new account: ![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/AddAccount.gif)Remove account:![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/RemoveAccount.gif)|
+|**Account transactions management**: Manages all expense/income transaction and of each account. You can also transfer the balance from one accounts to another one.|Add new transaction:![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/AddTransition.gif)Remove transaction:![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/RemoveTransaction.gif)Edit transaction:![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/EditTrans.gif)|
+|**Favorites list**: Provides list of favorites transaction that added by the user.|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Fav.gif)|
+|**Transactions statistics**: Display the statistics of the transactions by period or by category with graph.|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/EditTrans.gif)|
+|**Reset all data to default**: Reset all the data in the application to default.|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/ResetData.gif)|
 
 # How to setup
 ## Set up environment
@@ -59,20 +59,20 @@ This is a simple cross-platform mobile app that uses React Native framework. Thi
 # Screen
 |Screen name | Functions | Images|
 |---|---|---|
-|Overviews|Displays overview of all accounts and transaction|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/Overviews.PNG)|
-|Calculator|Choose the amount of money|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/Cal.PNG)|
-|TransactionEditor| For create new or edit transaction|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/TransEdit.PNG)|
-|TransactionDetail|Detail of the transaction|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/TransDetail.PNG)|
-|TransferEditor| For transfer money from the account to another one|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/TransferEdit.PNG)|
-|TransferDetail|Detail of the transfer|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/TransferDetail.PNG)|
-|Accounts| Display list of all accounts|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/Accounts.PNG)|
-|AccountEditor|For create new or edit account|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/AccountEdit.PNG)|
-|AccountDetail|Detail of the account|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/AccountDetail.PNG)|
-|Categories| Display list of all categories|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/Categories.PNG)|
-|CategoryEdit|For create new or edit category|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/CategorieEdit.PNG)|
-|Favourites|Display list of all favourites|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/Fav.PNG)|
-|Trends| Display the income/expense by time period(this month, 6 month, 12 month, all times)|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/ResetData.gif)|
-|TransactionsStatistics| Display statistics of income/expense by categories|![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/Screen/Trends.PNG)|
+|Overviews|Displays overview of all accounts and transaction|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/Overviews.PNG)|
+|Calculator|Choose the amount of money|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/Cal.PNG)|
+|TransactionEditor| For create new or edit transaction|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/TransEdit.PNG)|
+|TransactionDetail|Detail of the transaction|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/TransDetail.PNG)|
+|TransferEditor| For transfer money from the account to another one|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/TransferEdit.PNG)|
+|TransferDetail|Detail of the transfer|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/TransferDetail.PNG)|
+|Accounts| Display list of all accounts|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/Accounts.PNG)|
+|AccountEditor|For create new or edit account|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/AccountEdit.PNG)|
+|AccountDetail|Detail of the account|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/AccountDetail.PNG)|
+|Categories| Display list of all categories|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/Categories.PNG)|
+|CategoryEdit|For create new or edit category|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/CategorieEdit.PNG)|
+|Favourites|Display list of all favourites|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/Fav.PNG)|
+|Trends| Display the income/expense by time period(this month, 6 month, 12 month, all times)|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/ResetData.gif)|
+|TransactionsStatistics| Display statistics of income/expense by categories|![](https://raw.githubusercontent.com/anqck/React_Native_Project/master/readme/Screen/Trends.PNG)|
 |MoreMenu|A list that link to Favourites screen and Categories screen, reset all data||
 
 # Library
