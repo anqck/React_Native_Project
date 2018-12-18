@@ -1,10 +1,18 @@
 # React_Native_Project - Finance management application
 
 # Features
-- Dashboard: Displays overview of all accounts and transaction histories.
-![](https://raw.githubusercontent.com/react-native-community/react-native-svg/master/screenShoots/touchevents.gif)
-- Accounts management:Manages all account ( wallet, ATM, ect.) information. Can add, remove, edit orview all transactions of each account.
-![](https://raw.githubusercontent.com/react-native-community/react-native-svg/master/screenShoots/touchevents.gif)
+
+|Screen name | Images|
+|---|---|
+|Dashboard: Displays overview of all accounts and transaction histories.||
+|Accounts management:Manages all account ( wallet, ATM, ect.) information. Can add, remove, edit orview all transactions of each account.|- Add new account: ![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/AddAccount.gif)
+- Remove account:
+![](https://raw.githubusercontent.com/anqck/React_Native_Project/ReadmeUpdate/readme/RemoveAccount.gif)|
+|||
+
+
+- 
+
 - Account transactions management:Manages all expense/income transaction and of each account. Youcan also transfer the balance from one accounts to another one.
 - Favorites list:Provides list of favorites transaction that added by the user.
 - Transactions statistics:Display the statistics of the transactions by period or by category with graph.
